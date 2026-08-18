@@ -3310,8 +3310,12 @@ button {
   border-radius: var(--border-radius-md);
   padding: 1.25rem;
   display: flex;
-  gap: 1.25rem;
+  gap: 1rem;
   align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 
 .cic-icon {
@@ -3329,32 +3333,57 @@ button {
 .cic-icon.icon-lime { background-color: var(--color-slate-950); color: var(--color-lime-500); }
 .cic-icon.icon-cream { background-color: var(--color-slate-950); color: var(--color-cream-100); }
 
+.cic-text-wrap {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 .cic-label {
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 800;
   text-transform: uppercase;
   color: var(--color-slate-500);
   display: block;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.04em;
 }
 
 .cic-value {
   font-family: var(--font-heading);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 800;
   color: var(--color-slate-950);
   display: block;
+  margin-bottom: 0.25rem;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.cic-value:hover {
+  color: var(--color-lime-600);
 }
 
 .cic-value-text {
   font-family: var(--font-heading);
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 800;
   color: var(--color-slate-950);
+  display: block;
+  margin-bottom: 0.25rem;
+  line-height: 1.45;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .cic-sub {
   font-size: 0.8rem;
   color: var(--color-slate-500);
+  display: block;
+  line-height: 1.45;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Consultation Priority Box */
@@ -3426,16 +3455,23 @@ button {
   color: var(--color-white);
   border: 1px solid var(--color-slate-800);
   box-shadow: var(--shadow-xl);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .form-container-card {
-    padding: 1.5rem;
+    padding: 1.5rem 1rem;
+    border-radius: var(--border-radius-lg);
   }
 }
 
 .form-header {
   margin-bottom: 1.75rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .form-title {
@@ -3444,28 +3480,39 @@ button {
   font-weight: 800;
   color: var(--color-white);
   margin-bottom: 0.35rem;
+  word-break: break-word;
 }
 
 .form-sub {
   font-size: 0.88rem;
   color: var(--color-slate-400);
+  word-break: break-word;
 }
 
 .consultation-form {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 
 .form-row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .form-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 0.85rem !important;
   }
 }
 
@@ -3473,34 +3520,54 @@ button {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 
 .form-group label {
   font-size: 0.82rem;
   font-weight: 700;
   color: var(--color-slate-300);
+  word-break: break-word;
 }
 
 .required {
   font-weight: 800;
 }
 
-.form-group input, .form-group select, .form-group textarea {
+.form-group input,
+.form-group select,
+.form-group textarea,
+.consultation-form input,
+.consultation-form select,
+.consultation-form textarea {
   background-color: var(--color-slate-900);
   border: 1px solid var(--color-slate-750, #1b263b);
   border-radius: var(--border-radius-md);
   padding: 0.75rem 1rem;
   color: var(--color-white);
   transition: all var(--transition-fast);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 }
 
-.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus,
+.consultation-form input:focus,
+.consultation-form select:focus,
+.consultation-form textarea:focus {
   border-color: var(--color-lime-500);
   background-color: #121c2f;
   box-shadow: 0 0 0 3px rgba(141, 198, 63, 0.15);
 }
 
-.form-group select option {
+.form-group select option,
+.consultation-form select option {
   background-color: var(--color-slate-950);
   color: var(--color-white);
 }
@@ -6375,37 +6442,42 @@ button, a, input, select, textarea, .filter-tab, .faq-question, .pfilter-btn, .b
 /* 11. Contact Page Mobile Alignment */
 @media (max-width: 992px) {
   .contact-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100% !important;
     gap: 2rem;
-    width: 100%;
-    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
   }
 
-  .contact-info-col {
-    width: 100%;
-    box-sizing: border-box;
+  .contact-info-col,
+  .form-container-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    min-width: 0 !important;
   }
 
   .contact-info-card {
-    padding: 1rem;
-    width: 100%;
-    box-sizing: border-box;
+    padding: 1rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 
-  .cic-value, .cic-value-text {
-    word-break: break-word;
-    overflow-wrap: break-word;
+  .cic-value, .cic-value-text, .cic-sub {
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
   }
 
   .form-container-card {
-    padding: 1.5rem 1.15rem;
-    width: 100%;
-    box-sizing: border-box;
+    padding: 1.5rem 1rem !important;
+    border-radius: var(--border-radius-lg) !important;
   }
 
   .form-row {
     grid-template-columns: 1fr !important;
     gap: 0.85rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 }
 
