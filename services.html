@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover full-spectrum architectural renovation, licensed master electrical engineering, structural additions, and commercial fit-outs by WSK Electrical &amp; Renovation Projects.">
+  <meta name="keywords" content="WSK services, master electrician, luxury renovation services, electrical panel upgrade, home additions, commercial fit-outs, solar microgrids">
+  <meta name="author" content="WSK Electrical &amp; Renovation Projects">
+  <title>Our Services | WSK Electrical &amp; Renovation Projects</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement & Contact Bar -->
+  <aside class="top-bar" aria-label="Contact Information">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-info-item"><i class="fa-solid fa-location-dot text-lime"></i> 46 Brookford Road, Lotus River, Cape Town</span>
+        <span class="top-info-item"><a href="mailto:info@wkeandcprojects.co.za"><i class="fa-solid fa-envelope text-lime"></i> info@wkeandcprojects.co.za</a></span>
+        <span class="top-info-item"><a href="tel:+27731550289" class="top-phone" id="top-phone-link"><i class="fa-solid fa-phone text-lime"></i> 073 155 0289</a></span>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-info-item"><i class="fa-regular fa-clock text-lime"></i> Monday to Friday: 8:00 to 5:00</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <!-- Official Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="WSK Electrical and Renovation Projects Home">
+        <img src="assets/images/logo.png" alt="WSK Electrical &amp; Renovation Projects Logo" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link active">Our Services</a></li>
+          <li><a href="portfolio.html" class="nav-link">Projects</a></li>
+          <li><a href="index.html#why-us" class="nav-link">Why Choose Us</a></li>
+          <li><a href="index.html#reviews" class="nav-link">Client Testimonials</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header CTA & Mobile Toggle -->
+      <div class="header-actions">
+        <button class="btn btn-lime header-quote-btn" id="btn-header-quote" onclick="openQuoteModal()" aria-label="Get a Free Quote">
+          <i class="fa-solid fa-calculator"></i>
+          <span>Get a Free Quote</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <img src="assets/images/logo.png" alt="WSK Logo" class="drawer-logo-img">
+      </div>
+      <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link">Home</a></li>
+      <li><a href="index.html#about" class="drawer-link">About Us</a></li>
+      <li><a href="services.html" class="drawer-link active">Our Services</a></li>
+      <li><a href="portfolio.html" class="drawer-link">Projects</a></li>
+      <li><a href="index.html#why-us" class="drawer-link">Why Choose Us</a></li>
+      <li><a href="index.html#reviews" class="drawer-link">Client Testimonials</a></li>
+      <li><a href="contact.html" class="drawer-link">Contact Us</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="tel:+27731550289" class="drawer-phone">
+        <i class="fa-solid fa-phone"></i> 073 155 0289
+      </a>
+      <button class="btn btn-lime w-100" onclick="openQuoteModal(); closeDrawer();">
+        <span>Get Free Estimate</span>
+      </button>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- Page Hero Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="page-breadcrumbs">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="current">Services &amp; Specialties</span>
+      </div>
+
+      <h1 class="page-banner-title">
+        Our <span class="text-gradient-lime">Services</span>
+      </h1>
+      <p class="page-banner-desc">
+        At <strong>WSK Electrical &amp; Renovation Projects</strong>, we unify architectural construction, structural engineering, and master electrical expertise under one trusted roof. From 400A panel heavy-ups to ground-up additions, every project is executed with zero compromise.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sticky Quick-Jump Navigation Bar -->
+  <nav class="services-sticky-nav" aria-label="Services quick jump">
+    <div class="container services-nav-inner">
+      <a href="#master-electrical" class="snav-link active"><i class="fa-solid fa-bolt text-lime"></i> Master Electrical</a>
+      <a href="#residential-remodel" class="snav-link"><i class="fa-solid fa-house-chimney text-blue"></i> Luxury Remodeling</a>
+      <a href="#home-additions" class="snav-link"><i class="fa-solid fa-layer-group text-lime"></i> Structural Additions</a>
+      <a href="#commercial-fitout" class="snav-link"><i class="fa-solid fa-building text-blue"></i> Commercial Fit-Outs</a>
+      <a href="#solar-smart" class="snav-link"><i class="fa-solid fa-sun text-lime"></i> Solar &amp; Microgrid</a>
+    </div>
+  </nav>
+
+  <!-- Main Services Detailed Showcases -->
+  <main class="section bg-cream-50">
+    <div class="container">
+
+      <!-- 1. Master Electrical -->
+      <section class="service-showcase-row" id="master-electrical">
+        <div class="service-media-card">
+          <img src="assets/extracted/projects/03_db-relocation-thelab-franschhoek/WhatsApp-Image-2025-01-23-at-07.48.11.jpeg" alt="Master Electrical Service Upgrades">
+          <div class="service-floating-badge">
+            <strong>Certified Master Electrician</strong>
+            <span>License #EC-98421 • 100% Code Pass Record</span>
+          </div>
+        </div>
+        <div class="service-content-col">
+          <div class="service-sub-tag">
+            <i class="fa-solid fa-bolt text-lime"></i> Core Specialty 01
+          </div>
+          <h2 class="service-title-lg">200A &amp; 400A Heavy-Up, Smart Panels &amp; Whole-Home Rewiring</h2>
+          <p class="service-lead-desc">
+            We deliver master electrical engineering that eliminates dangerous overloaded panels, provides massive headroom for EV chargers and heat pumps, and optimizes power reliability through architectural EMT conduit craftsmanship.
+          </p>
+          <div class="service-deliverables-list">
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> 200A &amp; 400A Service Entrance Upgrades</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Dual Level 2/3 Fast EV Charging Stations</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Leviton &amp; Square D Smart Panel Telemetry</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Type 1/2 Whole-Home Surge Protection</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Aluminum Wiring &amp; Knob-and-Tube Remediation</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Lutron Caséta / HomeWorks Scene Automation</div>
+          </div>
+          <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-lime" onclick="openQuoteModal()">
+              <i class="fa-solid fa-calculator"></i> Get a Free Quote
+            </button>
+            <a href="contact.html" class="btn btn-blue">
+              <i class="fa-solid fa-envelope"></i> Reach Out to Us
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Luxury Residential Remodeling -->
+      <section class="service-showcase-row reverse" id="residential-remodel">
+        <div class="service-media-card">
+          <img src="assets/extracted/projects/01_franschhoek-4-bedroom-2024/WhatsApp-Image-2025-01-23-at-07.39.59-4.jpeg" alt="Luxury Residential Remodeling">
+          <div class="service-floating-badge">
+            <strong>Architectural Master Builder</strong>
+            <span>Turnkey General Contracting • 10-Year Warranty</span>
+          </div>
+        </div>
+        <div class="service-content-col">
+          <div class="service-sub-tag">
+            <i class="fa-solid fa-house-chimney text-blue"></i> Core Specialty 02
+          </div>
+          <h2 class="service-title-lg">Whole-Home Gut Remodels, Gourmet Kitchens &amp; Spa Baths</h2>
+          <p class="service-lead-desc">
+            Transform outdated spaces into modern architectural sanctuaries. We handle full structural wall removals, steel I-beam installations, bookmatched marble waterfall counters, custom millwork, and curbless zero-threshold wet rooms.
+          </p>
+          <div class="service-deliverables-list">
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Structural Wall Removals &amp; Steel Spans</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Gourmet Chef Kitchens with Waterfall Islands</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Curbless Showers &amp; Schluter Waterproofing</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Custom Fluted Walnut &amp; Oak Cabinetry</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Wide-Plank Hardwood with Radiant In-Floor Heat</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Architectural Acoustic Glass Sliding Enclosures</div>
+          </div>
+          <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-lime" onclick="openQuoteModal()">
+              <i class="fa-solid fa-calculator"></i> Get a Free Quote
+            </button>
+            <a href="contact.html" class="btn btn-blue">
+              <i class="fa-solid fa-file-invoice"></i> Request an Invoice
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Structural Additions -->
+      <section class="service-showcase-row" id="home-additions">
+        <div class="service-media-card">
+          <img src="assets/extracted/projects/13_duplex-apartments-house-martin/WhatsApp-Image-2023-07-23-at-09.55.54.jpeg" alt="Structural Home Extensions">
+          <div class="service-floating-badge">
+            <strong>Engineered Expansions</strong>
+            <span>Zero Thermal Bridging • Precision Framing</span>
+          </div>
+        </div>
+        <div class="service-content-col">
+          <div class="service-sub-tag">
+            <i class="fa-solid fa-layer-group text-lime"></i> Core Specialty 03
+          </div>
+          <h2 class="service-title-lg">Two-Story Home Extensions, Cantilever Suites &amp; Sunrooms</h2>
+          <p class="service-lead-desc">
+            Expand your living space with seamless architectural continuity. Our team handles deep helical foundation pilings, cantilevered steel framing, continuous thermal envelope insulation, and turnkey municipal permitting.
+          </p>
+          <div class="service-deliverables-list">
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Engineered Helical Foundations &amp; Grade Beams</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Cantilevered Steel Outriggers &amp; Upper Balconies</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Standing Seam Cladding &amp; Natural Cedar Soffits</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Dedicated 100A Subpanel Electrical Routing</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Multi-Zone Mini-Split Heat Pump Mechanicals</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Complete Zoning, Setback &amp; Structural Permitting</div>
+          </div>
+          <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-lime" onclick="openQuoteModal()">
+              <i class="fa-solid fa-calculator"></i> Get a Free Quote
+            </button>
+            <a href="contact.html" class="btn btn-blue">
+              <i class="fa-solid fa-envelope"></i> Reach Out to Us
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Commercial Fit-Outs -->
+      <section class="service-showcase-row reverse" id="commercial-fitout">
+        <div class="service-media-card">
+          <img src="assets/extracted/projects/11_restaurant-marias-2022/WhatsApp-Image-2022-12-15-at-22.40.47.jpeg" alt="Commercial Fit-Outs and Healthcare">
+          <div class="service-floating-badge">
+            <strong>3-Phase Commercial Power</strong>
+            <span>NEC Article 517 &amp; IBC 2024 Compliant</span>
+          </div>
+        </div>
+        <div class="service-content-col">
+          <div class="service-sub-tag">
+            <i class="fa-solid fa-building text-blue"></i> Core Specialty 04
+          </div>
+          <h2 class="service-title-lg">Commercial Office Fit-Outs, Medical Clinics &amp; Retail Space</h2>
+          <p class="service-lead-desc">
+            We provide fast-track commercial tenant improvements, high-amp 3-phase power distribution, automatic standby generator integration, isolated ground medical circuits, and modern acoustic timber wall systems.
+          </p>
+          <div class="service-deliverables-list">
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> 600A/800A 120/208V 3-Phase Main Switchgear</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Standby Diesel Generator &amp; Automatic Transfer ATS</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Hospital-Grade Isolated Ground Medical Circuits</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Acoustic STC 52+ Timber Slat Partitions</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> 0-10V Commercial Daylight-Harvesting Luminaires</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> ADA Accessibility Restrooms &amp; Fire Safety Retrofits</div>
+          </div>
+          <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-lime" onclick="openQuoteModal()">
+              <i class="fa-solid fa-calculator"></i> Get a Free Quote
+            </button>
+            <a href="contact.html" class="btn btn-blue">
+              <i class="fa-solid fa-file-invoice"></i> Request an Invoice
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Solar & Clean Energy -->
+      <section class="service-showcase-row" id="solar-smart">
+        <div class="service-media-card">
+          <img src="assets/extracted/projects/04_100kw-commercial-solar-180-panels/WhatsApp-Image-2025-01-23-at-07.43.48-2.jpeg" alt="Solar Microgrids and Tesla Powerwall">
+          <div class="service-floating-badge">
+            <strong>Clean Energy Microgrids</strong>
+            <span>Zero Net Energy • 15ms Automatic Islanding</span>
+          </div>
+        </div>
+        <div class="service-content-col">
+          <div class="service-sub-tag">
+            <i class="fa-solid fa-sun text-lime"></i> Core Specialty 05
+          </div>
+          <h2 class="service-title-lg">Rooftop Solar Arrays, Tesla Powerwall &amp; Smart Microgrids</h2>
+          <p class="service-lead-desc">
+            Achieve complete grid independence and clean power resilience. We install high-efficiency all-black monocrystalline arrays, Tesla Powerwall 3 battery banks, intelligent load-shedding panels, and fast Level 2 EV charging.
+          </p>
+          <div class="service-deliverables-list">
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> 20kW+ High-Efficiency Monocrystalline Arrays</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Dual Tesla Powerwall 3 Battery Storage Integration</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Instantaneous 15ms Power Outage Islanding</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Dynamic Smart Load-Shedding App Controllers</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Utility Net Metering (NEM 3.0) Coordination</div>
+            <div class="deliverable-item"><i class="fa-solid fa-circle-check"></i> Sub-5-Ohm Heavy Copper Earth Grounding Array</div>
+          </div>
+          <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-lime" onclick="openQuoteModal()">
+              <i class="fa-solid fa-calculator"></i> Get a Free Quote
+            </button>
+            <a href="contact.html" class="btn btn-blue">
+              <i class="fa-solid fa-envelope"></i> Reach Out to Us
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- 5-Phase Project Delivery Lifecycle -->
+  <section class="section bg-slate-dark text-white">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-badge badge-lime"><i class="fa-solid fa-list-check"></i> OUR PROVEN PROCESS</div>
+        <h2 class="section-title text-white">The WSK 5-Phase Master Delivery Model</h2>
+        <p class="section-desc text-slate-300">
+          We eliminate construction chaos with an itemized, transparent 5-stage workflow led by licensed tradespeople from Day 1 to final handover.
+        </p>
+      </div>
+
+      <div class="process-steps-grid">
+        <div class="process-step-card">
+          <div class="step-num-badge">01</div>
+          <h3 class="step-title">Architectural Consultation</h3>
+          <p class="step-desc">On-site structural evaluation, electrical load calculation, lifestyle goals, and budget framework.</p>
+        </div>
+
+        <div class="process-step-card">
+          <div class="step-num-badge">02</div>
+          <h3 class="step-title">3D Design &amp; Itemized Proposal</h3>
+          <p class="step-desc">Photorealistic 3D architectural renders, electrical schematics, line-item material breakdown with zero hidden fees.</p>
+        </div>
+
+        <div class="process-step-card">
+          <div class="step-num-badge">03</div>
+          <h3 class="step-title">Permitting &amp; Procurement</h3>
+          <p class="step-desc">Turnkey management of city building permits, utility approvals, structural stamps, and premium material delivery.</p>
+        </div>
+
+        <div class="process-step-card">
+          <div class="step-num-badge">04</div>
+          <h3 class="step-title">Precision Master Build</h3>
+          <p class="step-desc">Daily project manager supervision, clean conduit raceways, structural steel framing, and white-glove dust containment.</p>
+        </div>
+
+        <div class="process-step-card">
+          <div class="step-num-badge">05</div>
+          <h3 class="step-title">100% Code Pass &amp; Handover</h3>
+          <p class="step-desc">Municipal inspector final sign-off, system commissioning walkthrough, and 10-year warranty certificate activation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-banner-card">
+        <div class="section-badge badge-lime"><i class="fa-solid fa-sparkles"></i> YOUR IDEA IS OUR PROJECT</div>
+        <h2 class="cta-title">Ready to Discuss Your Project Specifications?</h2>
+        <p class="cta-desc">
+          Schedule an on-site consultation with our Master Builder and Certified Master Electrician. Receive a detailed, non-binding proposal.
+        </p>
+        <div class="cta-buttons">
+          <button class="btn btn-lime btn-lg" onclick="openQuoteModal()">
+            <i class="fa-solid fa-calculator"></i>
+            <span>Request Free Project Proposal</span>
+          </button>
+          <a href="contact.html" class="btn btn-blue btn-lg">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact Consultation Center</span>
+          </a>
+        </div>
+        <div class="cta-features-list">
+          <div class="cta-item"><i class="fa-solid fa-shield-check text-lime"></i> Licensed &amp; Insured #EC-98421</div>
+          <div class="cta-item"><i class="fa-solid fa-check text-blue"></i> 10-Year Craftsmanship Warranty</div>
+          <div class="cta-item"><i class="fa-solid fa-certificate text-lime"></i> Certified Master Workmanship</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive Modern Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <div class="footer-logo-wrap">
+            <img src="assets/images/logo.png" alt="WSK Electrical &amp; Renovation Projects" class="footer-logo-img">
+          </div>
+          <p class="footer-about-text">
+            <strong>WSK Electrical &amp; Renovation Projects</strong> is a premier licensed contractor specializing in high-end architectural renovations, ground-up additions, commercial fit-outs, and certified master electrical engineering.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Navigation</h3>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="services.html">Services Catalog</a></li>
+            <li><a href="portfolio.html">Project Portfolio</a></li>
+            <li><a href="index.html#estimator">Cost Estimator</a></li>
+            <li><a href="index.html#why-us">Why Choose WSK</a></li>
+            <li><a href="index.html#reviews">Client Testimonials</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Specialties</h3>
+          <ul class="footer-nav">
+            <li><a href="services.html#master-electrical">200A/400A Service Upgrades</a></li>
+            <li><a href="services.html#residential-remodel">Luxury Kitchen &amp; Bath Remodels</a></li>
+            <li><a href="services.html#home-additions">Two-Story Home Extensions</a></li>
+            <li><a href="services.html#commercial-fitout">Commercial Fit-Outs &amp; 3-Phase</a></li>
+            <li><a href="services.html#solar-smart">Tesla Powerwall &amp; Solar Microgrids</a></li>
+            <li><a href="services.html#residential-remodel">Complete Home Renovations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Direct Contact</h3>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone text-lime"></i>
+            <div>
+              <strong><a href="tel:+27731550289">073 155 0289</a></strong>
+              <span>Direct Phone Line</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-whatsapp text-lime"></i>
+            <div>
+              <strong><a href="https://wa.me/27731550289?text=Hi%20WSK%20Electrical%20%26%20Renovation%20Projects,%20I%20would%20like%20to%20inquire%20about%20a%20project." target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></strong>
+              <span>Instant Messaging</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope text-lime"></i>
+            <div>
+              <strong><a href="mailto:info@wkeandcprojects.co.za">info@wkeandcprojects.co.za</a></strong>
+              <span>Fast Response Email</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot text-lime"></i>
+            <div>
+              <strong>Headquarters</strong>
+              <span>46 Brookford Road, Lotus River, Cape Town, 7941</span>
+            </div>
+          </div>
+          <div class="footer-social-links">
+            <a href="https://www.facebook.com/WKElectricalConstructionProjects/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/wkelectrical/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Houzz"><i class="fa-brands fa-houzz"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> WSK Electrical &amp; Renovation Projects. All rights reserved. "Your Idea Is Our Project".</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>•</span>
+          <a href="#">Terms of Service</a>
+          <span>•</span>
+          <a href="#">Safety &amp; Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions (WhatsApp & Call Icons + Greeting Pop-up) -->
+  <div class="floating-quick-actions" aria-label="Quick Contact Actions">
+    <!-- Welcome Greeting Pop-up Bubble -->
+    <div class="whatsapp-greeting-popup" id="whatsapp-greeting-popup" role="dialog" aria-label="WhatsApp Welcome Message">
+      <div class="wpg-header">
+        <div class="wpg-profile">
+          <div class="wpg-avatar-wrap">
+            <i class="fa-solid fa-headset"></i>
+            <span class="wpg-online-dot"></span>
+          </div>
+          <div class="wpg-meta">
+            <span class="wpg-name">WSK Projects</span>
+            <span class="wpg-status"><i class="fa-solid fa-circle" style="font-size: 0.55rem; margin-right: 3px;"></i> Online now</span>
+          </div>
+        </div>
+        <button type="button" class="wpg-close-btn" id="wpg-close-btn" aria-label="Close welcome message">&times;</button>
+      </div>
+      <div class="wpg-bubble">
+        <p class="wpg-message">Welcome to WSK, how can we help you?</p>
+      </div>
+      <a href="https://wa.me/27731550289?text=Hi%20WSK%20Electrical%20%26%20Renovation%20Projects,%20I%20would%20like%20to%20inquire%20about%20a%20service." class="wpg-chat-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Chat on WhatsApp</span>
+      </a>
+    </div>
+
+    <a href="https://wa.me/27731550289?text=Hi%20WSK%20Electrical%20%26%20Renovation%20Projects,%20I%20would%20like%20to%20inquire%20about%20a%20service." class="float-btn float-whatsapp" id="float-whatsapp-btn" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+      <span class="float-pulse-whatsapp"></span>
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+27731550289" class="float-btn float-call" title="Call Us Direct" aria-label="Call Us">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- Interactive Project & Estimate Modal -->
+  <div class="modal-overlay" id="quote-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeQuoteModal()" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-badge text-lime"><i class="fa-solid fa-clipboard-check"></i> FREE ESTIMATE &amp; CONSULTATION</div>
+        <h3 class="modal-title" id="modal-title">Request Your WSK Proposal</h3>
+        <p class="modal-desc">"Your Idea Is Our Project" — Speak directly with our Master Builder and Master Electrician.</p>
+      </div>
+
+      <form id="modal-quote-form" onsubmit="handleModalSubmit(event)">
+        <div class="modal-form-grid">
+          <div class="form-group">
+            <label for="m-name">Full Name <span class="required text-lime">*</span></label>
+            <input type="text" id="m-name" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="m-phone">Phone Number <span class="required text-lime">*</span></label>
+            <input type="tel" id="m-phone" required placeholder="(555) 123-4567">
+          </div>
+          <div class="form-group">
+            <label for="m-email">Email Address <span class="required text-lime">*</span></label>
+            <input type="email" id="m-email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="m-service">Project Category <span class="required text-lime">*</span></label>
+            <select id="m-service" required>
+              <option value="Certified Master Electrical" selected>Certified Master Electrical</option>
+              <option value="Luxury Kitchen Renovation">Luxury Kitchen Renovation</option>
+              <option value="Bathroom Remodel">Master Bathroom Remodel</option>
+              <option value="Home Addition & Extension">Home Addition &amp; Extension</option>
+              <option value="Commercial Fit-Out">Commercial Fit-Out &amp; 3-Phase</option>
+              <option value="Solar & Battery Storage">Solar Microgrid &amp; Tesla Powerwall</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="m-notes">Project Details / Estimated Dimensions</label>
+          <textarea id="m-notes" rows="3" placeholder="Describe your timeline, square footage, specific requirements..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-lime btn-lg w-100 mt-4">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Send Estimate Request</span>
+        </button>
+
+        <p class="modal-footer-note"><i class="fa-solid fa-shield-check text-blue"></i> 100% Privacy Protected • Licensed Master Tradespeople</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

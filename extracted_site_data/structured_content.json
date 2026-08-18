@@ -1,0 +1,115 @@
+{
+  "contactInfo": {
+    "companyName": "WSK Electrical And Renovation Projects (WK Electrical & Construction Projects)",
+    "tagline": "Creating quality urban lifestyles, building stronger communities",
+    "phone": "073 155 0289",
+    "phoneSecondary": "+27 63 154 9925",
+    "whatsapp": "+27731550289",
+    "email": "info@wkeandcprojects.co.za",
+    "officeAddress": {
+      "street": "46 Brookford Road",
+      "suburb": "Lotus River",
+      "postalCode": "7941",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "full": "46 Brookford Road Lotus River 7941, Cape Town, South Africa"
+    },
+    "openingHours": "Mon-Fri 8am-5pm",
+    "socials": {
+      "facebook": "https://www.facebook.com/WKElectricalConstructionProjects/",
+      "instagram": "https://www.instagram.com/wkelectrical/?hl=en",
+      "whatsapp": "https://wa.me/27731550289"
+    }
+  },
+  "testimonials": [
+    {
+      "name": "Cheslin Mayham",
+      "role": "Client",
+      "rating": 5,
+      "comment": "WK Electrical & Construction Projects is professional, delivering extremely good work without any hassles. I can strongly recommend them since they have completed various building projects at my home within time and without any comebacks. I was impressed with the effective communication with regards to the different stages of the building projects."
+    },
+    {
+      "name": "Grant",
+      "role": "Client",
+      "rating": 5,
+      "comment": "Great Service all and All Thank you Guys for assisting me on sort Notice with replacing my damaged Roof . Excellent Communication on explaining step by step what’s going to happen . i will definitely use and refer your business"
+    },
+    {
+      "name": "Stacey Jansen",
+      "role": "Client",
+      "rating": 5,
+      "comment": "I had WK Electrical & Construction Projects come to help us extend our current house with two additional bedrooms. They where very informative with guidance and assisting us to understand what they daily task gone be .I have said this before to people that came to my place .when I decide to do anymore Renovations they will be the people I’ll call .Great Job Guys well done"
+    },
+    {
+      "name": "Peggy Small",
+      "role": "Client",
+      "rating": 5,
+      "comment": "What a great company that managed to give me a quote that I was happy with and listen to what I wanted and advised on my concerns. I am really impressed with the workmanship and the conduct of all employees. The work was completed to my satisfaction and I’m looking forward to do more business with them soon."
+    }
+  ],
+  "services": [
+    {
+      "title": "All Building & Plastering",
+      "description": ""
+    },
+    {
+      "title": "Electrical & Electrical Maintenance",
+      "description": ""
+    },
+    {
+      "title": "Ceilings & Partitioning",
+      "description": ""
+    },
+    {
+      "title": "Waterproofing",
+      "description": ""
+    },
+    {
+      "title": "Painting",
+      "description": ""
+    },
+    {
+      "title": "Paving",
+      "description": ""
+    },
+    {
+      "title": "Plumbing",
+      "description": ""
+    },
+    {
+      "title": "Tiling, Laminated & all flooring",
+      "description": ""
+    },
+    {
+      "title": "Carpentry",
+      "description": ""
+    },
+    {
+      "title": "Aluminium Windows",
+      "description": ""
+    },
+    {
+      "title": "All home & office maintenance",
+      "description": ""
+    }
+  ],
+  "projects": {
+    "count": 0,
+    "list": []
+  },
+  "about": {
+    "headings": [
+      "About Us",
+      "Our Mission",
+      "Our Vision",
+      "Value Statement",
+      "Get an easy quotation for your Project!",
+      "Pages",
+      "Get In Touch",
+      "073 155 0289",
+      "info@wkeandcprojects.co.za",
+      "46 Brookford Road Lotus River 7941"
+    ],
+    "textParagraphs": []
+  }
+}

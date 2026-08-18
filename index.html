@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WSK Electrical &amp; Renovation Projects — Your Idea Is Our Project. Premier construction, luxury renovations, and certified master electrical services. 100% Licensed &amp; Insured.">
+  <meta name="keywords" content="WSK Electrical, WSK Renovation, construction projects, master electrician, home remodeling, commercial renovations">
+  <meta name="author" content="WSK Electrical &amp; Renovation Projects">
+  <title>WSK | Electrical &amp; Renovation Projects — Your Idea Is Our Project</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons for crisp visual cues -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement & Contact Bar -->
+  <aside class="top-bar" aria-label="Contact Information">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-info-item"><i class="fa-solid fa-location-dot text-lime"></i> 46 Brookford Road, Lotus River, Cape Town</span>
+        <span class="top-info-item"><a href="mailto:info@wkeandcprojects.co.za"><i class="fa-solid fa-envelope text-lime"></i> info@wkeandcprojects.co.za</a></span>
+        <span class="top-info-item"><a href="tel:+27731550289" class="top-phone" id="top-phone-link"><i class="fa-solid fa-phone text-lime"></i> 073 155 0289</a></span>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-info-item"><i class="fa-regular fa-clock text-lime"></i> Monday to Friday: 8:00 to 5:00</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <!-- Official Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="WSK Electrical and Renovation Projects Home">
+        <img src="assets/images/logo.png" alt="WSK Electrical and Renovation Projects Logo" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Our Services</a></li>
+          <li><a href="portfolio.html" class="nav-link">Projects</a></li>
+          <li><a href="#why-us" class="nav-link">Why Choose Us</a></li>
+          <li><a href="#reviews" class="nav-link">Client Testimonials</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header CTA & Mobile Toggle -->
+      <div class="header-actions">
+        <button class="btn btn-lime header-quote-btn" id="btn-header-quote" onclick="openQuoteModal()" aria-label="Get a Free Quote">
+          <i class="fa-solid fa-calculator"></i>
+          <span>Get a Free Quote</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <a href="index.html" class="brand-logo drawer-logo" aria-label="WSK Electrical and Renovation Projects Home" onclick="closeDrawer()">
+        <img src="assets/images/logo.png" alt="WSK Electrical and Renovation Projects Logo" class="drawer-logo-img">
+      </a>
+      <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link">Home</a></li>
+      <li><a href="#about" class="drawer-link">About Us</a></li>
+      <li><a href="services.html" class="drawer-link">Our Services</a></li>
+      <li><a href="portfolio.html" class="drawer-link">Projects</a></li>
+      <li><a href="#why-us" class="drawer-link">Why Choose Us</a></li>
+      <li><a href="#reviews" class="drawer-link">Client Testimonials</a></li>
+      <li><a href="contact.html" class="drawer-link">Contact Us</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <div class="drawer-action-btns">
+        <a href="https://wa.me/27731550289?text=Hi%20WSK%20Electrical%20%26%20Renovation%20Projects,%20I%20would%20like%20to%20inquire%20about%20a%20project." class="btn btn-whatsapp w-100" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>WhatsApp Us</span>
+        </a>
+        <a href="tel:+27731550289" class="btn btn-call w-100">
+          <i class="fa-solid fa-phone"></i>
+          <span>Call: 073 155 0289</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-wrapper">
+      <div class="hero-slider" id="hero-slider">
+        <div class="hero-slide active" style="background-image: url('assets/extracted/projects/01_franschhoek-4-bedroom-2024/WhatsApp-Image-2025-01-23-at-07.39.59-4.jpeg');" data-caption="Franschhoek 4-Bedroom Renovation &amp; Build (2024)"></div>
+        <div class="hero-slide" style="background-image: url('assets/extracted/projects/04_100kw-commercial-solar-180-panels/WhatsApp-Image-2025-01-23-at-07.43.48-2.jpeg');" data-caption="100KW Industrial Solar &amp; Inverter Installation"></div>
+        <div class="hero-slide" style="background-image: url('assets/extracted/projects/14_guest-house-renovation-franschhoek/WhatsApp-Image-2024-03-20-at-1.12.59-PM-1.jpeg');" data-caption="Franschhoek Luxury Guest House Renovation"></div>
+        <div class="hero-slide" style="background-image: url('assets/extracted/projects/06_pvc-ceiling-downlights-wesbank/WhatsApp-Image-2025-01-23-at-07.54.43.jpeg');" data-caption="PVC Ceiling Installation &amp; LED Lighting — Wesbank"></div>
+      </div>
+      <div class="hero-overlay"></div>
+    </div>
+    
+    <div class="container hero-container">
+      <div class="hero-grid-2col">
+        <!-- Hero Left Column: Headline, Trust Points & Stats -->
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="hero-tag-icon"><i class="fa-solid fa-sparkles text-lime"></i></span>
+            <span class="hero-tag-text">YOUR IDEA IS OUR PROJECT</span>
+          </div>
+
+          <h1 class="hero-title">
+            Bespoke <span class="text-gradient-lime">Renovation</span>, 
+            Solid <span class="text-gradient-cream">Construction</span> &amp; 
+            Certified <span class="text-gradient-blue">Electrical</span>
+          </h1>
+
+          <p class="hero-desc">
+            At <strong>WSK Electrical &amp; Renovation Projects</strong>, we transform residential and commercial visions into precision reality. Seamlessly uniting Master Electricians and General Builders under one standard of flawless execution.
+          </p>
+
+          <div class="hero-features-list">
+            <div class="hero-feature-item">
+              <i class="fa-solid fa-circle-check text-lime"></i>
+              <span>100% In-House Master Electricians &amp; Builders</span>
+            </div>
+            <div class="hero-feature-item">
+              <i class="fa-solid fa-circle-check text-blue"></i>
+              <span>Fixed-Price Contract Guarantee — Zero Surprises</span>
+            </div>
+            <div class="hero-feature-item">
+              <i class="fa-solid fa-circle-check text-lime"></i>
+              <span>10-Year Comprehensive Workmanship Warranty</span>
+            </div>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="portfolio.html" class="btn btn-lime btn-lg">
+              <i class="fa-solid fa-images"></i>
+              <span>Explore Portfolio</span>
+            </a>
+            <a href="contact.html" class="btn btn-outline-white btn-lg">
+              <i class="fa-solid fa-calendar-check"></i>
+              <span>Request Consultation</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Catchy CTA Form Card & Floating Badges -->
+        <div class="hero-form-column">
+          <div class="hero-cta-card-wrapper">
+            <!-- Floating Badge Top -->
+            <div class="hero-float-badge float-badge-top">
+              <div class="float-badge-icon icon-lime-glow">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="float-badge-text">
+                <div class="stars-mini">
+                  <i class="fa-solid fa-star text-lime"></i>
+                  <i class="fa-solid fa-star text-lime"></i>
+                  <i class="fa-solid fa-star text-lime"></i>
+                  <i class="fa-solid fa-star text-lime"></i>
+                  <i class="fa-solid fa-star text-lime"></i>
+                </div>
+                <strong>5-Star Rated Service</strong>
+                <span>Master Craftsmanship</span>
+              </div>
+            </div>
+
+            <!-- Floating Badge Bottom -->
+            <div class="hero-float-badge float-badge-bottom">
+              <div class="float-badge-icon icon-blue-glow">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <div class="float-badge-text">
+                <strong>Master Certified</strong>
+                <span>Licensed Builders &amp; Electricians</span>
+              </div>
+            </div>
+
+            <!-- Catchy Hero Form Card -->
+            <div class="hero-quick-form-card">
+              <div class="hq-header">
+                <div class="hq-badge text-lime">
+                  <i class="fa-solid fa-bolt text-lime"></i> FAST 2-HOUR RESPONSE
+                </div>
+                <h3 class="hq-title">Get a Free Project Estimate</h3>
+                <p class="hq-subtitle">Speak directly with our Master Builder &amp; Master Electrician.</p>
+              </div>
+
+              <form id="hero-quick-form" class="hq-form" onsubmit="handleHeroFormSubmit(event)">
+                <div class="hq-form-group">
+                  <label for="hq-name">Full Name <span class="text-lime">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="hq-name" name="name" placeholder="e.g. Michael Vance" required>
+                  </div>
+                </div>
+
+                <div class="hq-form-group">
+                  <label for="hq-phone">Phone Number <span class="text-lime">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" id="hq-phone" name="phone" placeholder="(555) 000-0000" required>
+                  </div>
+                </div>
+
+                <div class="hq-form-group">
+                  <label for="hq-service">Project Type <span class="text-lime">*</span></label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <select id="hq-service" name="service" required>
+                      <option value="" disabled selected>Select Your Project Type</option>
+                      <option value="Luxury Kitchen Renovation">Luxury Kitchen Remodel</option>
+                      <option value="Master Bathroom Renovation">Master Ensuite Bathroom</option>
+                      <option value="Electrical Panel & Smart Home">200A/400A Panel &amp; Smart Electrical</option>
+                      <option value="EV Charger & Energy Storage">EV Charger / Energy Storage</option>
+                      <option value="Glass Extension & Room Addition">Glass Extension &amp; Addition</option>
+                      <option value="Custom Residential Build">Ground-Up Custom Residential Build</option>
+                      <option value="Commercial Fit-Out">Commercial Build &amp; Fit-Out</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="hq-form-group">
+                  <label for="hq-timeline">Target Start Timeline</label>
+                  <div class="input-with-icon">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <select id="hq-timeline" name="timeline">
+                      <option value="Within 2 to 4 Weeks" selected>Within 2 to 4 Weeks</option>
+                      <option value="1 to 3 Months">1 to 3 Months</option>
+                      <option value="Planning &amp; Feasibility">Planning &amp; Design Phase</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-lime btn-lg w-100 hq-submit-btn" id="btn-hero-submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span>Request Free Estimate &amp; Plan</span>
+                </button>
+
+                <div class="hq-footer-guarantee">
+                  <i class="fa-solid fa-shield-check text-lime"></i>
+                  <span>100% Free Consultation • Fixed Price Lock Guarantee</span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- About Us & Standards Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-column">
+          <div class="about-catalog-3">
+            <div class="about-catalog-item item-main">
+              <img src="assets/extracted/projects/01_franschhoek-4-bedroom-2024/WhatsApp-Image-2025-01-23-at-07.39.59.jpeg" alt="Franschhoek 4-Bedroom Renovation & Build" loading="lazy">
+              <div class="about-cat-caption">
+                <span class="about-cat-badge"><i class="fa-solid fa-paint-roller text-lime"></i> Renovation</span>
+                <h4>Franschhoek 4-Bedroom Build</h4>
+              </div>
+            </div>
+            <div class="about-catalog-item item-sub1">
+              <img src="assets/extracted/projects/04_100kw-commercial-solar-180-panels/WhatsApp-Image-2025-01-23-at-07.43.48-2.jpeg" alt="100KW Industrial Solar & Inverters" loading="lazy">
+              <div class="about-cat-caption">
+                <span class="about-cat-badge"><i class="fa-solid fa-bolt-lightning text-blue"></i> Solar</span>
+                <h4>100KW Industrial Solar</h4>
+              </div>
+            </div>
+            <div class="about-catalog-item item-sub2">
+              <img src="assets/extracted/projects/06_pvc-ceiling-downlights-wesbank/WhatsApp-Image-2025-01-23-at-07.54.43.jpeg" alt="PVC Ceilings & Lighting Wesbank" loading="lazy">
+              <div class="about-cat-caption">
+                <span class="about-cat-badge"><i class="fa-solid fa-border-all text-lime"></i> Ceilings</span>
+                <h4>PVC Ceilings &amp; Lighting</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content-column">
+          <span class="section-badge badge-blue">ABOUT WSK PROJECTS</span>
+          <h2 class="section-title">Driven by Quality, Delivered with Integrity</h2>
+          <p class="about-lead" style="font-size: 1.12rem; line-height: 1.7; color: var(--color-slate-800); margin-bottom: 1.25rem;">
+            When considering renovation and construction companies in Cape Town, <strong>WSK Electrical And Renovation Projects</strong> stands out! We offer an extensive range of building and renovation services that are suited for commercial, leisure, retail, industrial, and residential requirements.
+          </p>
+          <p style="color: var(--color-slate-600); line-height: 1.65; margin-bottom: 1.5rem;">
+            It is our aim to make our clients’ design dreams a reality through integrity, quality, and professional service delivery. Your project is so much more than a building — it’s the next place for great ideas, community, and growth. We are passionate and hands-on with every project, from big to small and everything in-between.
+          </p>
+
+          <div class="about-pillars-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 2rem;">
+            <div style="background: #ffffff; padding: 1.25rem; border-radius: var(--border-radius-md); border-left: 4px solid var(--color-lime-500); box-shadow: var(--shadow-sm);">
+              <h4 style="font-size: 1rem; font-weight: 800; color: var(--color-slate-950); margin-bottom: 0.35rem;"><i class="fa-solid fa-bullseye text-lime"></i> Our Mission</h4>
+              <p style="font-size: 0.88rem; color: var(--color-slate-600); line-height: 1.5;">Assist clients to improve, upgrade &amp; renovate homes/offices &amp; businesses at affordable cost through honest &amp; reliable quality services.</p>
+            </div>
+            <div style="background: #ffffff; padding: 1.25rem; border-radius: var(--border-radius-md); border-left: 4px solid var(--color-blue-500); box-shadow: var(--shadow-sm);">
+              <h4 style="font-size: 1rem; font-weight: 800; color: var(--color-slate-950); margin-bottom: 0.35rem;"><i class="fa-solid fa-eye text-blue"></i> Our Vision</h4>
+              <p style="font-size: 0.88rem; color: var(--color-slate-600); line-height: 1.5;">To make WSK Electrical And Renovation Projects one of the leading &amp; best Renovation and Maintenance companies in South Africa.</p>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="services.html" class="btn btn-lime">
+              <i class="fa-solid fa-circle-info"></i>
+              <span>Learn More About Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core 3 Pillars Section -->
+  <section class="section pillars-section" id="pillars">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge badge-lime">WHAT WE DO</span>
+        <h2 class="section-title">The Three Pillars of WSK</h2>
+        <p class="section-subtitle">
+          "Your Idea Is Our Project" — Uniting licensed building contractors and master electricians under one standard of flawless execution.
+        </p>
+      </div>
+
+      <div class="pillars-grid">
+        <!-- Pillar 1: Renovation -->
+        <div class="pillar-card pillar-renovation">
+          <div class="pillar-img-wrap">
+            <img src="assets/images/kitchen-after.jpg" alt="WSK Luxury Home Renovation &amp; Remodel">
+            <div class="pillar-img-tag text-lime"><i class="fa-solid fa-paint-roller"></i> Renovation</div>
+          </div>
+          <div class="pillar-icon-badge-row">
+            <div class="pillar-icon-badge icon-lime" aria-hidden="true">
+              <i class="fa-solid fa-paint-roller"></i>
+            </div>
+            <div class="pillar-badge-meta">
+              <span class="pillar-category text-lime">INTERIOR &amp; EXTERIOR</span>
+              <span class="pillar-number">PILLAR 01</span>
+            </div>
+          </div>
+          <div class="pillar-body">
+            <h3 class="pillar-title">Luxury Renovation &amp; Remodeling</h3>
+            <p class="pillar-text">
+              High-end kitchen overhauls, spa-grade master ensuite bathrooms, multi-room additions, open-concept load-bearing wall removals, and architectural facades.
+            </p>
+            <ul class="pillar-feature-list">
+              <li><i class="fa-solid fa-check text-lime"></i> Gourmet Kitchen Transformations</li>
+              <li><i class="fa-solid fa-check text-lime"></i> Luxury Master Ensuite Bathrooms</li>
+              <li><i class="fa-solid fa-check text-lime"></i> Open Concept Wall Removals</li>
+              <li><i class="fa-solid fa-check text-lime"></i> Home Extensions &amp; Living Expansions</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pillar 2: Electrical -->
+        <div class="pillar-card pillar-electrical">
+          <div class="pillar-img-wrap">
+            <img src="assets/images/electrical.jpg" alt="WSK Certified Master Electrical Services">
+            <div class="pillar-img-tag text-blue"><i class="fa-solid fa-bolt-lightning"></i> Electrical</div>
+          </div>
+          <div class="pillar-icon-badge-row">
+            <div class="pillar-icon-badge icon-blue" aria-hidden="true">
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+            <div class="pillar-badge-meta">
+              <span class="pillar-category text-blue">POWER &amp; SMART SYSTEMS</span>
+              <span class="pillar-number">PILLAR 02</span>
+            </div>
+          </div>
+          <div class="pillar-body">
+            <h3 class="pillar-title">Master Electrical Engineering</h3>
+            <p class="pillar-text">
+              Certified Master Electricians delivering 200A/400A panel upgrades, complete whole-house rewiring, EV fast-charging stations, smart home automation, and certified safety sign-off.
+            </p>
+            <ul class="pillar-feature-list">
+              <li><i class="fa-solid fa-check text-blue"></i> 200A / 400A Main Service Panel Upgrades</li>
+              <li><i class="fa-solid fa-check text-blue"></i> Smart Home Lighting &amp; Automation</li>
+              <li><i class="fa-solid fa-check text-blue"></i> Level 2 &amp; DC Fast EV Charging Stations</li>
+              <li><i class="fa-solid fa-check text-blue"></i> Commercial High-Voltage Power Distribution</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Pillar 3: Construction -->
+        <div class="pillar-card pillar-construction">
+          <div class="pillar-img-wrap">
+            <img src="assets/images/commercial.jpg" alt="WSK General and Structural Construction">
+            <div class="pillar-img-tag text-cream-dark"><i class="fa-solid fa-trowel-bricks"></i> Construction</div>
+          </div>
+          <div class="pillar-icon-badge-row">
+            <div class="pillar-icon-badge icon-cream" aria-hidden="true">
+              <i class="fa-solid fa-trowel-bricks"></i>
+            </div>
+            <div class="pillar-badge-meta">
+              <span class="pillar-category text-cream-dark">FOUNDATION &amp; STRUCTURE</span>
+              <span class="pillar-number">PILLAR 03</span>
+            </div>
+          </div>
+          <div class="pillar-body">
+            <h3 class="pillar-title">Architectural Construction &amp; Builds</h3>
+            <p class="pillar-text">
+              Ground-up custom residential builds, commercial structural framing, foundation engineering, concrete reinforcement, and complete turnkey project management.
+            </p>
+            <ul class="pillar-feature-list">
+              <li><i class="fa-solid fa-check text-lime"></i> New Custom Residential Builds</li>
+              <li><i class="fa-solid fa-check text-lime"></i> Commercial Steel &amp; Wood Framing</li>
+              <li><i class="fa-solid fa-check text-lime"></i> Structural Load-Bearing Headers</li>
+              <li><i class="fa-solid fa-check text-lime"></i> Municipal Permitting &amp; Inspection Sign-off</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Project Showcase & Before/After Section -->
+  <section class="section portfolio-section" id="portfolio">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge badge-lime">FEATURED WORK</span>
+        <h2 class="section-title">Selected Portfolio &amp; Case Studies</h2>
+        <p class="section-subtitle">
+          "Your Idea Is Our Project" — Slide through our interactive Before &amp; After transformations and browse our recent master projects.
+        </p>
+      </div>
+
+      <!-- Interactive Before & After Slider Showcase -->
+      <div class="before-after-card">
+        <div class="ba-header">
+          <div class="ba-title-wrap">
+            <span class="ba-tag"><i class="fa-solid fa-wand-magic-sparkles text-lime"></i> INTERACTIVE TRANSFORMATION</span>
+            <h3 class="ba-title">Highland Park Full Kitchen &amp; Great Room Transformation</h3>
+            <p class="ba-meta">Structural wall removal, Italian Calacatta marble waterfall island, integrated architectural LED lighting, 200A subpanel installation.</p>
+          </div>
+          <div class="ba-stats-row">
+            <div class="ba-stat-item">
+              <span class="stat-label">Timeline</span>
+              <span class="stat-val">5 Weeks</span>
+            </div>
+            <div class="ba-stat-item">
+              <span class="stat-label">Square Footage</span>
+              <span class="stat-val">850 sq.ft</span>
+            </div>
+            <div class="ba-stat-item">
+              <span class="stat-label">Scope</span>
+              <span class="stat-val text-blue">Reno + Electrical</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="comparison-slider" id="kitchen-comparison-slider">
+          <!-- After Image (Base) -->
+          <img src="assets/images/kitchen-after.jpg" alt="Renovated Modern Luxury Kitchen by WSK" class="img-after">
+          <span class="badge-label badge-after">AFTER: WSK LUXURY FINISH</span>
+
+          <!-- Before Image (Overlay) -->
+          <div class="before-wrapper" id="before-wrapper">
+            <img src="assets/images/kitchen-before.jpg" alt="Original Outdated 1990s Kitchen" class="img-before" id="img-before">
+            <span class="badge-label badge-before">BEFORE: OUTDATED 1990s LAYOUT</span>
+          </div>
+
+          <!-- Interactive Slider Handle -->
+          <div class="slider-handle" id="slider-handle">
+            <div class="handle-line"></div>
+            <div class="handle-button" aria-label="Drag slider to compare before and after">
+              <i class="fa-solid fa-chevron-left"></i>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="handle-line"></div>
+          </div>
+        </div>
+        <div class="ba-drag-hint">
+          <i class="fa-solid fa-arrows-left-right text-lime"></i> Drag slider or touch &amp; slide to reveal the before &amp; after transformation
+        </div>
+      </div>
+
+      <!-- Project Filter Tabs -->
+      <div class="filter-tabs portfolio-filter-tabs" id="project-filters">
+        <button class="filter-tab active" data-pfilter="all">All Projects (4)</button>
+        <button class="filter-tab" data-pfilter="renovation">Luxury Remodel</button>
+        <button class="filter-tab" data-pfilter="electrical">Master Electrical</button>
+        <button class="filter-tab" data-pfilter="residential">Residential Build</button>
+        <button class="filter-tab" data-pfilter="commercial">Commercial</button>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="project-grid" id="project-grid">
+        <!-- Project 1: Franschhoek 4-Bedroom Renovation -->
+        <div class="project-card" data-type="renovation" onclick="window.location.href='project-details.html?id=franschhoek-4-bedroom-2024'">
+          <div class="project-img-wrap">
+            <img src="assets/extracted/projects/01_franschhoek-4-bedroom-2024/WhatsApp-Image-2025-01-23-at-07.39.59-4.jpeg" alt="Franshhoek 4 bedroom building and renovation existing home" loading="lazy">
+            <div class="project-overlay">
+              <span class="btn btn-sm btn-lime">View More</span>
+            </div>
+            <span class="project-badge badge-lime-pill">2024 Building &amp; Renovation</span>
+          </div>
+          <div class="project-details">
+            <h4 class="project-name">Franshhoek 4 Bedroom Building &amp; Renovation</h4>
+            <p class="project-location"><i class="fa-solid fa-location-dot text-lime"></i> Franschhoek, Western Cape • 2024</p>
+            <div class="project-tags">
+              <span>Full Addition</span>
+              <span>Roof Rebuild</span>
+              <span>Luxury Finishes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: 16KW Sunsynk Solar -->
+        <div class="project-card" data-type="electrical" onclick="window.location.href='project-details.html?id=16kw-sunsynk-inverter-30-panel'">
+          <div class="project-img-wrap">
+            <img src="assets/extracted/projects/02_16kw-sunsynk-inverter-30-panel/WhatsApp-Image-2025-01-23-at-07.41.48.jpeg" alt="16KW Sunsynk inverter installation and 30 panel" loading="lazy">
+            <div class="project-overlay">
+              <span class="btn btn-sm btn-blue">View More</span>
+            </div>
+            <span class="project-badge badge-blue-pill">2024 Solar &amp; Inverter</span>
+          </div>
+          <div class="project-details">
+            <h4 class="project-name">16KW Sunsynk Inverter &amp; 30 Solar Panels</h4>
+            <p class="project-location"><i class="fa-solid fa-location-dot text-blue"></i> Cape Town • 2024</p>
+            <div class="project-tags">
+              <span>16KW Sunsynk</span>
+              <span>30 High-Output Panels</span>
+              <span>Load Shedding Backup</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: DB Relocation TheLab Franschhoek -->
+        <div class="project-card" data-type="electrical" onclick="window.location.href='project-details.html?id=db-relocation-thelab-franschhoek'">
+          <div class="project-img-wrap">
+            <img src="assets/extracted/projects/03_db-relocation-thelab-franschhoek/WhatsApp-Image-2025-01-23-at-07.48.11.jpeg" alt="Distribution Board Relocation - TheLab Franshhoek" loading="lazy">
+            <div class="project-overlay">
+              <span class="btn btn-sm btn-blue">View More</span>
+            </div>
+            <span class="project-badge badge-blue-pill">Commercial Electrical</span>
+          </div>
+          <div class="project-details">
+            <h4 class="project-name">DB Relocation — TheLab Franschhoek</h4>
+            <p class="project-location"><i class="fa-solid fa-location-dot text-blue"></i> TheLab, Franschhoek • 2024</p>
+            <div class="project-tags">
+              <span>Main DB Relocation</span>
+              <span>Surge Protection</span>
+              <span>Compliance Certified</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: 100KW Industrial Solar -->
+        <div class="project-card" data-type="electrical" onclick="window.location.href='project-details.html?id=100kw-commercial-solar-180-panels'">
+          <div class="project-img-wrap">
+            <img src="assets/extracted/projects/04_100kw-commercial-solar-180-panels/WhatsApp-Image-2025-01-23-at-07.43.48-2.jpeg" alt="100Kw x2 50Kw in parallel with 180 550w Canadian panels" loading="lazy">
+            <div class="project-overlay">
+              <span class="btn btn-sm btn-blue">View More</span>
+            </div>
+            <span class="project-badge badge-blue-pill">Industrial Solar Power</span>
+          </div>
+          <div class="project-details">
+            <h4 class="project-name">100KW Industrial Solar (180 Canadian Panels)</h4>
+            <p class="project-location"><i class="fa-solid fa-location-dot text-blue"></i> Western Cape • 2024</p>
+            <div class="project-tags">
+              <span>2x 50KW Inverters</span>
+              <span>180x 550W Panels</span>
+              <span>High Voltage Storage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Robertson 50KW Solar -->
+        <div class="project-card" data-type="electrical" onclick="window.location.href='portfolio.html'">
+          <div class="project-img-wrap">
+            <img src="assets/extracted/projects/05_robertson-50kw-high-voltage-80-solar-panels/WhatsApp-Image-2025-01-23-at-07.46.42-2.jpeg" alt="Robertson 50Kw high voltage with 80 Canadian solar panels" loading="lazy">
+            <div class="project-overlay">
+              <span class="btn btn-sm btn-blue">View More</span>
+            </div>
+            <span class="project-badge badge-blue-pill">Commercial Solar Power</span>
+          </div>
+          <div class="project-details">
+            <h4 class="project-name">Robertson 50KW High-Voltage Solar</h4>
+            <p class="project-location"><i class="fa-solid fa-location-dot text-blue"></i> Robertson, Western Cape • 2024</p>
+            <div class="project-tags">
+              <span>50KW High Voltage</span>
+              <span>80 Canadian Panels</span>
+              <span>Off-Grid Capability</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: PVC Ceiling & LED Downlights -->
+        <div class="project-card" data-type="renovation" onclick="window.location.href='portfolio.html'">
+          <div class="project-img-wrap">
+            <img src="assets/extracted/projects/06_pvc-ceiling-downlights-wesbank/WhatsApp-Image-2025-01-23-at-07.54.43.jpeg" alt="PVC ceiling installation with LED down lights - Wesbank" loading="lazy">
+            <div class="project-overlay">
+              <span class="btn btn-sm btn-lime">View 8 Photos</span>
+            </div>
+            <span class="project-badge badge-lime-pill">Ceilings &amp; Lighting</span>
+          </div>
+          <div class="project-details">
+            <h4 class="project-name">PVC Ceiling &amp; LED Downlights — Wesbank</h4>
+            <p class="project-location"><i class="fa-solid fa-location-dot text-lime"></i> Wesbank, Cape Town • 2024</p>
+            <div class="project-tags">
+              <span>PVC Ceilings</span>
+              <span>LED Downlights</span>
+              <span>Modern Finishes</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- View All Projects CTA Banner -->
+      <div style="text-align: center; margin-top: 3.5rem;">
+        <a href="portfolio.html" class="btn btn-lime btn-lg" style="display: inline-flex; align-items: center; gap: 0.75rem; box-shadow: var(--shadow-lg);">
+          <i class="fa-solid fa-images"></i>
+          <span>Explore All Projects &amp; 10-Photo Case Studies</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Showcase Section -->
+  <section class="section why-us-section" id="why-us">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge badge-blue">WHY CHOOSE WSK</span>
+        <h2 class="section-title text-white">Built on Precision, Trust &amp; Master Craftsmanship</h2>
+        <p class="section-subtitle text-slate-300">
+          Combining certified Master Electrical engineering and full-scale architectural renovations under one accountable standard of excellence.
+        </p>
+      </div>
+
+      <div class="why-us-grid">
+        <!-- Left Column: Image Showcase (1 Big Top + 2 Side-by-Side Bottom) -->
+        <div class="why-us-catalog">
+          <!-- Top Big Image Featured Card -->
+          <div class="catalog-main-card">
+            <div class="catalog-img-frame">
+              <img src="assets/extracted/projects/01_franschhoek-4-bedroom-2024/WhatsApp-Image-2025-01-23-at-07.39.59-4.jpeg" alt="Franschhoek Luxury 4-Bedroom Renovation & Build" class="catalog-main-image">
+            </div>
+          </div>
+
+          <!-- Bottom 2 Side-by-Side Images -->
+          <div class="catalog-bottom-row">
+            <!-- Sub Card 1 (Left): 100KW Industrial Solar -->
+            <a href="portfolio.html" class="catalog-sub-card" title="100KW Industrial Solar Power & Canadian Panels">
+              <div class="catalog-sub-img-wrap">
+                <img src="assets/extracted/projects/04_100kw-commercial-solar-180-panels/WhatsApp-Image-2025-01-23-at-07.43.48-2.jpeg" alt="100KW Industrial Solar Power & Canadian Panels" loading="lazy">
+              </div>
+            </a>
+
+            <!-- Sub Card 2 (Right): PVC Ceilings & Lighting -->
+            <a href="portfolio.html" class="catalog-sub-card" title="PVC Ceiling Installation & LED Downlights Wesbank">
+              <div class="catalog-sub-img-wrap">
+                <img src="assets/extracted/projects/06_pvc-ceiling-downlights-wesbank/WhatsApp-Image-2025-01-23-at-07.54.43.jpeg" alt="PVC Ceiling Installation & LED Downlights Wesbank" loading="lazy">
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: 5 Key Value Points -->
+        <div class="why-us-points">
+          <!-- Point 1 -->
+          <div class="point-card point-card-1">
+            <div class="point-icon icon-lime">
+              <i class="fa-solid fa-certificate"></i>
+              <span class="point-num">01</span>
+            </div>
+            <div class="point-content">
+              <h3 class="point-title">Dual Certified Master Electricians &amp; Master Builders</h3>
+              <p class="point-text">
+                Our unified in-house team manages both structural building renovations and certified high-voltage electrical engineering under one direct point of contact.
+              </p>
+            </div>
+          </div>
+
+          <!-- Point 2 -->
+          <div class="point-card point-card-2">
+            <div class="point-icon icon-blue">
+              <i class="fa-solid fa-file-invoice-dollar"></i>
+              <span class="point-num">02</span>
+            </div>
+            <div class="point-content">
+              <h3 class="point-title">Guaranteed Fixed-Price Transparency</h3>
+              <p class="point-text">
+                Every proposal includes an itemized scope of work. What we quote is what you pay, with zero hidden costs or mid-project markup surprises.
+              </p>
+            </div>
+          </div>
+
+          <!-- Point 3 -->
+          <div class="point-card point-card-3">
+            <div class="point-icon icon-lime">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span class="point-num">03</span>
+            </div>
+            <div class="point-content">
+              <h3 class="point-title">Comprehensive 10-Year Workmanship Warranty</h3>
+              <p class="point-text">
+                We stand firmly behind all structural builds and electrical installations, backed by full commercial insurance and warranty protection.
+              </p>
+            </div>
+          </div>
+
+          <!-- Point 4 -->
+          <div class="point-card point-card-4">
+            <div class="point-icon icon-cream">
+              <i class="fa-solid fa-clipboard-list"></i>
+              <span class="point-num">04</span>
+            </div>
+            <div class="point-content">
+              <h3 class="point-title">Direct Master Builder Oversight &amp; Daily Updates</h3>
+              <p class="point-text">
+                Every project is directly supervised on-site by our lead Master Builder and Electrician, keeping you updated with daily photo logs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Point 5 -->
+          <div class="point-card point-card-5">
+            <div class="point-icon icon-blue">
+              <i class="fa-solid fa-bolt-lightning"></i>
+              <span class="point-num">05</span>
+            </div>
+            <div class="point-content">
+              <h3 class="point-title">Full Turnkey Solutions from Solar to Luxury Living</h3>
+              <p class="point-text">
+                From ground-up luxury extensions and interior remodels to 100KW commercial solar microgrids, WSK delivers complete turnkey execution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials & Reviews -->
+  <section class="section reviews-section bg-slate-dark" id="reviews">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge badge-lime"><i class="fa-solid fa-star"></i> 100% VERIFIED CLIENT REVIEWS</span>
+        <h2 class="section-title text-white">Hear What Our Happy Clients Say</h2>
+        <p class="section-subtitle text-slate-300">
+          "Your Idea Is Our Project" — Read real reviews from clients across Cape Town and the Western Cape who trusted WSK.
+        </p>
+      </div>
+
+      <!-- Testimonials 4 Cards Grid -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2.5rem;">
+        
+        <!-- Review 1: Cheslin Mayham -->
+        <div style="background-color: #0E1626; border: 1px solid var(--color-slate-800); border-radius: var(--border-radius-lg); padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-dark-card);">
+          <div>
+            <div style="color: #FBBF24; font-size: 1.1rem; margin-bottom: 1rem;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p style="font-size: 0.95rem; color: var(--color-slate-200); line-height: 1.65; font-style: italic; margin-bottom: 1.5rem;">
+              "WK Electrical &amp; Construction Projects is professional, delivering extremely good work without any hassles. I can strongly recommend them since they have completed various building projects at my home within time and without any comebacks. I was impressed with the effective communication with regards to the different stages of the building projects."
+            </p>
+          </div>
+          <div style="border-top: 1px solid var(--color-slate-800); padding-top: 1rem;">
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 1.05rem; color: var(--color-lime-400);">Cheslin Mayham</div>
+            <div style="font-size: 0.82rem; color: var(--color-slate-400);"><i class="fa-solid fa-circle-check text-lime"></i> Verified Homeowner • Cape Town</div>
+          </div>
+        </div>
+
+        <!-- Review 2: Grant -->
+        <div style="background-color: #0E1626; border: 1px solid var(--color-slate-800); border-radius: var(--border-radius-lg); padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-dark-card);">
+          <div>
+            <div style="color: #FBBF24; font-size: 1.1rem; margin-bottom: 1rem;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p style="font-size: 0.95rem; color: var(--color-slate-200); line-height: 1.65; font-style: italic; margin-bottom: 1.5rem;">
+              "Great Service all and All Thank you Guys for assisting me on short Notice with replacing my damaged Roof. Excellent Communication on explaining step by step what’s going to happen. I will definitely use and refer your business."
+            </p>
+          </div>
+          <div style="border-top: 1px solid var(--color-slate-800); padding-top: 1rem;">
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 1.05rem; color: var(--color-blue-400);">Grant</div>
+            <div style="font-size: 0.82rem; color: var(--color-slate-400);"><i class="fa-solid fa-circle-check text-blue"></i> Verified Property Owner • Cape Town</div>
+          </div>
+        </div>
+
+        <!-- Review 3: Stacey Jansen -->
+        <div style="background-color: #0E1626; border: 1px solid var(--color-slate-800); border-radius: var(--border-radius-lg); padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-dark-card);">
+          <div>
+            <div style="color: #FBBF24; font-size: 1.1rem; margin-bottom: 1rem;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p style="font-size: 0.95rem; color: var(--color-slate-200); line-height: 1.65; font-style: italic; margin-bottom: 1.5rem;">
+              "I had WK Electrical &amp; Construction Projects come to help us extend our current house with two additional bedrooms. They were very informative with guidance and assisting us to understand what the daily tasks were going to be. When I decide to do anymore Renovations they will be the people I’ll call. Great Job Guys well done!"
+            </p>
+          </div>
+          <div style="border-top: 1px solid var(--color-slate-800); padding-top: 1rem;">
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 1.05rem; color: var(--color-lime-400);">Stacey Jansen</div>
+            <div style="font-size: 0.82rem; color: var(--color-slate-400);"><i class="fa-solid fa-circle-check text-lime"></i> Home Extension Client • Cape Town</div>
+          </div>
+        </div>
+
+        <!-- Review 4: Peggy Small -->
+        <div style="background-color: #0E1626; border: 1px solid var(--color-slate-800); border-radius: var(--border-radius-lg); padding: 2rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--shadow-dark-card);">
+          <div>
+            <div style="color: #FBBF24; font-size: 1.1rem; margin-bottom: 1rem;">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p style="font-size: 0.95rem; color: var(--color-slate-200); line-height: 1.65; font-style: italic; margin-bottom: 1.5rem;">
+              "What a great company that managed to give me a quote that I was happy with and listen to what I wanted and advised on my concerns. I am really impressed with the workmanship and the conduct of all employees. The work was completed to my satisfaction and I’m looking forward to do more business with them soon."
+            </p>
+          </div>
+          <div style="border-top: 1px solid var(--color-slate-800); padding-top: 1rem;">
+            <div style="font-family: var(--font-heading); font-weight: 800; font-size: 1.05rem; color: var(--color-blue-400);">Peggy Small</div>
+            <div style="font-size: 0.82rem; color: var(--color-slate-400);"><i class="fa-solid fa-circle-check text-blue"></i> Verified Client • Cape Town</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive FAQ Section (2-Column Layout with Featured Showcase Image) -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-badge badge-blue">FREQUENTLY ASKED QUESTIONS</span>
+        <h2 class="section-title">Clear Answers to Common Questions</h2>
+        <p class="section-subtitle">
+          Everything you need to know about our licensing, contracts, permitting, and execution processes.
+        </p>
+      </div>
+
+      <div class="faq-layout-grid">
+        <!-- Left Column: Featured Project Media (Full Height to match questions) -->
+        <div class="faq-media-column">
+          <div class="faq-media-card">
+            <img src="assets/extracted/projects/14_guest-house-renovation-franschhoek/WhatsApp-Image-2024-03-20-at-1.12.59-PM-1.jpeg" alt="WSK Master Renovation Project Franschhoek" class="faq-media-img" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Right Column: Accordion Questions -->
+        <div class="faq-accordion-column">
+          <div class="faq-item active">
+            <button class="faq-question" aria-expanded="true">
+              <span>Are you licensed and insured for both general construction and electrical?</span>
+              <i class="fa-solid fa-chevron-down faq-icon text-blue"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes, absolutely. WSK holds certified licenses for both General Building &amp; Renovation and Master Electrical Contracting. We carry comprehensive commercial general liability and full workers' compensation coverage for complete client peace of mind.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do you guarantee no unexpected cost overruns?</span>
+              <i class="fa-solid fa-chevron-down faq-icon text-blue"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Before beginning work, we complete full structural and electrical load assessments and provide an itemized fixed-price proposal. Unless you explicitly request a scope addition during construction, our contracted price is guaranteed.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you handle city building permits, drawings, and code inspections?</span>
+              <i class="fa-solid fa-chevron-down faq-icon text-blue"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. Our in-house team drafts architectural plans, submits all necessary paperwork to municipal building departments, schedules rough-in and final inspections, and secures your formal Certificate of Occupancy.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How quickly can you provide an on-site consultation and formal proposal?</span>
+              <i class="fa-solid fa-chevron-down faq-icon text-blue"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Our project leaders schedule on-site consultations within 24 to 48 hours. After evaluating structural conditions and load capacity, we deliver a detailed, transparent, itemized fixed-price proposal within 2 business days.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What does the 10-Year Workmanship Warranty cover?</span>
+              <i class="fa-solid fa-chevron-down faq-icon text-blue"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Our 10-Year Warranty covers structural framing stability, electrical panel wiring integrity, conduit integrity, tile/flooring adherence, and moisture barrier membranes installed by our master tradespeople.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can you issue Certificates of Compliance (CoC) for solar &amp; DB boards?</span>
+              <i class="fa-solid fa-chevron-down faq-icon text-blue"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. Our registered Master Electricians test and issue legitimate Certificates of Compliance (CoC) for all electrical installations, solar microgrids, DB relocations, and property transfer requirements across the Western Cape.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- High-Conversion Call To Action Banner -->
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-banner-card">
+        <div class="cta-banner-content">
+          <span class="cta-badge"><i class="fa-solid fa-sparkles text-lime"></i> YOUR IDEA IS OUR PROJECT</span>
+          <h2 class="cta-title">Ready to Renovate, Build, or Power Your Space?</h2>
+          <p class="cta-desc">
+            Schedule your free on-site consultation today. Speak directly with WSK's Master Builders &amp; Master Electricians.
+          </p>
+          <div class="cta-buttons">
+            <button class="btn btn-lime btn-lg" onclick="openQuoteModal()">
+              <i class="fa-solid fa-calendar-check"></i>
+              <span>Book Free On-Site Inspection</span>
+            </button>
+            <a href="tel:+27731550289" class="btn btn-blue btn-lg">
+              <i class="fa-solid fa-phone"></i>
+              <span>Call 073 155 0289</span>
+            </a>
+            <a href="contact.html" class="btn btn-outline-white btn-lg">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact Page &amp; Blueprints</span>
+            </a>
+          </div>
+        </div>
+        <div class="cta-features-list">
+          <div class="cta-item"><i class="fa-solid fa-shield-check text-lime"></i> Free Detailed Estimate</div>
+          <div class="cta-item"><i class="fa-solid fa-shield-check text-blue"></i> 48-Hour Proposal Turnaround</div>
+          <div class="cta-item"><i class="fa-solid fa-shield-check text-lime"></i> 100% Guaranteed Price Lock</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive Modern Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Footer Column 1: Brand -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-logo-wrap">
+            <img src="assets/images/logo.png" alt="WSK Electrical and Renovation Projects Logo" class="footer-logo-img">
+          </div>
+          <p class="footer-about-text">
+            Premier residential and commercial renovations, certified master electrical engineering, and architectural construction. "Your Idea Is Our Project."
+          </p>
+        </div>
+
+        <!-- Footer Column 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="services.html">Services Catalog</a></li>
+            <li><a href="portfolio.html">Project Portfolio &amp; Case Studies</a></li>
+            <li><a href="#estimator">Cost Estimator</a></li>
+            <li><a href="#why-us">Why Choose WSK</a></li>
+            <li><a href="#reviews">Client Testimonials</a></li>
+            <li><a href="contact.html">Contact Us &amp; Booking</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 3: Services -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Our Trade Services</h4>
+          <ul class="footer-nav">
+            <li><a href="services.html#residential-remodel">Luxury Kitchen Remodeling</a></li>
+            <li><a href="services.html#master-electrical">200A/400A Main Panel Upgrades</a></li>
+            <li><a href="services.html#residential-remodel">Master Ensuite Bathrooms</a></li>
+            <li><a href="services.html#master-electrical">Whole-Home Smart Automation</a></li>
+            <li><a href="services.html#home-additions">Two-Story Home Extensions</a></li>
+            <li><a href="services.html#solar-smart">EV Fast Chargers &amp; Solar Microgrids</a></li>
+            <li><a href="services.html#commercial-fitout">Commercial Fit-Out &amp; 3-Phase</a></li>
+            <li><a href="services.html#solar-smart">Solar &amp; Backup Power Solutions</a></li>
+          </ul>
+        </div>
+
+        <!-- Footer Column 4: Contact & Details -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Direct Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone text-lime"></i>
+            <div>
+              <strong><a href="tel:+27731550289">073 155 0289</a></strong>
+              <span>Direct Phone Line</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-whatsapp text-lime"></i>
+            <div>
+              <strong><a href="https://wa.me/27731550289?text=Hi%20WSK%20Electrical%20%26%20Renovation%20Projects,%20I%20would%20like%20to%20inquire%20about%20a%20project." target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></strong>
+              <span>Instant Messaging</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope text-lime"></i>
+            <div>
+              <strong><a href="mailto:info@wkeandcprojects.co.za">info@wkeandcprojects.co.za</a></strong>
+              <span>Fast 2-Hour Response</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot text-lime"></i>
+            <div>
+              <strong>Headquarters</strong>
+              <span>46 Brookford Road, Lotus River, Cape Town, 7941</span>
+              <span>Western Cape, South Africa</span>
+            </div>
+          </div>
+
+          <div class="footer-social-links">
+            <a href="https://wa.me/27731550289" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/wkelectrical/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/WKElectricalConstructionProjects/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; <span id="current-year">2026</span> WSK Electrical and Renovation Projects. All Rights Reserved. <em>"Your Idea Is Our Project"</em>
+        </div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>•</span>
+          <a href="#">Terms of Service</a>
+          <span>•</span>
+          <a href="#">Warranty Terms</a>
+          <span>•</span>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions (WhatsApp & Call Icons + Greeting Pop-up) -->
+  <div class="floating-quick-actions" aria-label="Quick Contact Actions">
+    <!-- Welcome Greeting Pop-up Bubble -->
+    <div class="whatsapp-greeting-popup" id="whatsapp-greeting-popup" role="dialog" aria-label="WhatsApp Welcome Message">
+      <div class="wpg-header">
+        <div class="wpg-profile">
+          <div class="wpg-avatar-wrap">
+            <i class="fa-solid fa-headset"></i>
+            <span class="wpg-online-dot"></span>
+          </div>
+          <div class="wpg-meta">
+            <span class="wpg-name">WSK Projects</span>
+            <span class="wpg-status"><i class="fa-solid fa-circle" style="font-size: 0.55rem; margin-right: 3px;"></i> Online now</span>
+          </div>
+        </div>
+        <button type="button" class="wpg-close-btn" id="wpg-close-btn" aria-label="Close welcome message">&times;</button>
+      </div>
+      <div class="wpg-bubble">
+        <p class="wpg-message">Welcome to WSK, how can we help you?</p>
+      </div>
+      <a href="https://wa.me/27731550289?text=Hi%20WSK%20Electrical%20%26%20Renovation%20Projects,%20I%20would%20like%20to%20inquire%20about%20a%20project." class="wpg-chat-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Chat on WhatsApp</span>
+      </a>
+    </div>
+
+    <a href="https://wa.me/27731550289?text=Hi%20WSK%20Electrical%20%26%20Renovation%20Projects,%20I%20would%20like%20to%20inquire%20about%20a%20project." class="float-btn float-whatsapp" id="float-whatsapp-btn" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+      <span class="float-pulse-whatsapp"></span>
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+27731550289" class="float-btn float-call" title="Call Us Direct" aria-label="Call Us">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- Interactive Project & Estimate Modal -->
+  <div class="modal-overlay" id="quote-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeQuoteModal()" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-badge text-lime"><i class="fa-solid fa-clipboard-check"></i> FREE ESTIMATE &amp; CONSULTATION</div>
+        <h3 class="modal-title" id="modal-title">Request Your WSK Proposal</h3>
+        <p class="modal-desc">"Your Idea Is Our Project" — Speak directly with our Master Builder and Master Electrician.</p>
+      </div>
+
+      <form id="modal-quote-form" onsubmit="handleModalSubmit(event)">
+        <div class="modal-form-grid">
+          <div class="form-group">
+            <label for="m-name">Full Name <span class="required text-lime">*</span></label>
+            <input type="text" id="m-name" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="m-phone">Phone Number <span class="required text-lime">*</span></label>
+            <input type="tel" id="m-phone" required placeholder="(555) 123-4567">
+          </div>
+          <div class="form-group">
+            <label for="m-email">Email Address <span class="required text-lime">*</span></label>
+            <input type="email" id="m-email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="m-service">Project Category <span class="required text-lime">*</span></label>
+            <select id="m-service" required>
+              <option value="Luxury Kitchen Renovation" selected>Luxury Kitchen Renovation</option>
+              <option value="Bathroom Remodel">Master Bathroom Remodel</option>
+              <option value="Electrical Panel Upgrade">200A/400A Electrical Panel Upgrade</option>
+              <option value="Whole Home Electrical">Whole-Home Smart Rewiring</option>
+              <option value="Home Extension">Home Extension / Addition</option>
+              <option value="General Construction">Ground-Up Construction</option>
+              <option value="Commercial Fit-Out">Commercial Renovation &amp; Power</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="m-notes">Project Details / Estimated Dimensions</label>
+          <textarea id="m-notes" rows="3" placeholder="Describe your timeline, square footage, specific requirements..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-lime btn-lg w-100 mt-4">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Send Estimate Request</span>
+        </button>
+
+        <p class="modal-footer-note"><i class="fa-solid fa-shield-check text-blue"></i> 100% Privacy Protected • Licensed Master Tradespeople</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

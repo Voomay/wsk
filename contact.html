@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact WSK Electrical &amp; Renovation Projects. Speak directly with our team. Request a project consultation or quote.">
+  <meta name="keywords" content="contact WSK, hire master electrician, renovation contractor estimate, electrical services, construction consultation">
+  <meta name="author" content="WSK Electrical &amp; Renovation Projects">
+  <title>Contact Us | WSK Electrical &amp; Renovation Projects</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement & Contact Bar -->
+  <aside class="top-bar" aria-label="Contact Information">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-info-item"><i class="fa-solid fa-location-dot text-lime"></i> 46 Brookford Road, Lotus River, Cape Town</span>
+        <span class="top-info-item"><a href="mailto:info@wkeandcprojects.co.za"><i class="fa-solid fa-envelope text-lime"></i> info@wkeandcprojects.co.za</a></span>
+        <span class="top-info-item"><a href="tel:+27731550289" class="top-phone" id="top-phone-link"><i class="fa-solid fa-phone text-lime"></i> 073 155 0289</a></span>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-info-item"><i class="fa-regular fa-clock text-lime"></i> Monday to Friday: 8:00 to 5:00</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <!-- Official Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="WSK Electrical and Renovation Projects Home">
+        <img src="assets/images/logo.png" alt="WSK Electrical &amp; Renovation Projects Logo" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Our Services</a></li>
+          <li><a href="portfolio.html" class="nav-link">Projects</a></li>
+          <li><a href="index.html#why-us" class="nav-link">Why Choose Us</a></li>
+          <li><a href="index.html#reviews" class="nav-link">Client Testimonials</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header CTA & Mobile Toggle -->
+      <div class="header-actions">
+        <button class="btn btn-lime header-quote-btn" id="btn-header-quote" onclick="openQuoteModal()" aria-label="Get a Free Quote">
+          <i class="fa-solid fa-calculator"></i>
+          <span>Get a Free Quote</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <img src="assets/images/logo.png" alt="WSK Logo" class="drawer-logo-img">
+      </div>
+      <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link">Home</a></li>
+      <li><a href="index.html#about" class="drawer-link">About Us</a></li>
+      <li><a href="services.html" class="drawer-link">Our Services</a></li>
+      <li><a href="portfolio.html" class="drawer-link">Projects</a></li>
+      <li><a href="index.html#why-us" class="drawer-link">Why Choose Us</a></li>
+      <li><a href="index.html#reviews" class="drawer-link">Client Testimonials</a></li>
+      <li><a href="contact.html" class="drawer-link active">Contact Us</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="tel:+27731550289" class="drawer-phone">
+        <i class="fa-solid fa-phone"></i> 073 155 0289
+      </a>
+      <button class="btn btn-lime w-100" onclick="openQuoteModal(); closeDrawer();">
+        <span>Get Free Estimate</span>
+      </button>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- Page Hero Banner with Background Image Cover & Visual Showcase of What We've Done -->
+  <section class="contact-page-banner">
+    <div class="container">
+      <div class="contact-hero-grid">
+        <!-- Hero Left Column -->
+        <div class="contact-hero-text">
+          <div class="page-breadcrumbs">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span class="current">Contact Us</span>
+          </div>
+
+          <div class="section-badge badge-lime"><i class="fa-solid fa-sparkles"></i> YOUR IDEA IS OUR PROJECT</div>
+
+          <h1 class="page-banner-title">
+            Let's Bring Your <span class="text-gradient-lime">Vision to Life</span>
+          </h1>
+          <p class="page-banner-desc">
+            Connect directly with our Master Builder and Certified Master Electrician. Whether you are planning a multi-room luxury remodel, an electrical installation, or a custom build, our team is ready to bring your vision to life.
+          </p>
+
+          <div class="contact-banner-badges">
+            <span class="contact-badge-item"><i class="fa-solid fa-circle-check text-lime"></i> 100% In-House Master Trades</span>
+            <span class="contact-badge-item"><i class="fa-solid fa-circle-check text-blue"></i> Fixed-Price Contract Guarantee</span>
+            <span class="contact-badge-item"><i class="fa-solid fa-circle-check text-lime"></i> 10-Year Craftsmanship Warranty</span>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Showcase of What We've Done -->
+        <div class="contact-hero-gallery">
+          <div class="contact-gallery-header">
+            <span class="gallery-tag text-lime"><i class="fa-solid fa-camera"></i> WHAT WE'VE DONE • RECENT WORK</span>
+            <a href="portfolio.html" class="text-slate-300" style="font-size: 0.78rem; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+              View All <i class="fa-solid fa-arrow-right text-lime"></i>
+            </a>
+          </div>
+          <div class="contact-gallery-grid">
+            <!-- Project 1 -->
+            <a href="portfolio.html" class="contact-gallery-card">
+              <img src="assets/extracted/projects/01_franschhoek-4-bedroom-2024/WhatsApp-Image-2025-01-23-at-07.39.59.jpeg" alt="Franschhoek 4-Bedroom Build" loading="lazy">
+              <div class="contact-gallery-overlay">
+                <div class="contact-gallery-title">Franschhoek 4-Bed Build</div>
+                <div class="contact-gallery-sub"><i class="fa-solid fa-paint-roller"></i> Luxury Renovation</div>
+              </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="portfolio.html" class="contact-gallery-card">
+              <img src="assets/extracted/projects/04_100kw-commercial-solar-180-panels/WhatsApp-Image-2025-01-23-at-07.43.48-2.jpeg" alt="100KW Commercial Solar & Inverters" loading="lazy">
+              <div class="contact-gallery-overlay">
+                <div class="contact-gallery-title">100KW Industrial Solar</div>
+                <div class="contact-gallery-sub"><i class="fa-solid fa-sun"></i> Solar &amp; Inverters</div>
+              </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="portfolio.html" class="contact-gallery-card">
+              <img src="assets/extracted/projects/14_guest-house-renovation-franschhoek/WhatsApp-Image-2024-03-20-at-1.12.59-PM-1.jpeg" alt="Franschhoek Guest House Renovation" loading="lazy">
+              <div class="contact-gallery-overlay">
+                <div class="contact-gallery-title">Franschhoek Guest House</div>
+                <div class="contact-gallery-sub"><i class="fa-solid fa-house-chimney"></i> Hospitality Remodel</div>
+              </div>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="portfolio.html" class="contact-gallery-card">
+              <img src="assets/extracted/projects/06_pvc-ceiling-downlights-wesbank/WhatsApp-Image-2025-01-23-at-07.54.43.jpeg" alt="PVC Ceilings & Lighting Wesbank" loading="lazy">
+              <div class="contact-gallery-overlay">
+                <div class="contact-gallery-title">PVC Ceilings &amp; Lighting</div>
+                <div class="contact-gallery-sub"><i class="fa-solid fa-bolt"></i> Master Electrical</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Contact Section -->
+  <main class="section bg-cream-50" id="contact-main">
+    <div class="container">
+
+      <!-- Dual Column Layout: Contact Info & Contact Form -->
+      <div class="contact-grid">
+        
+        <!-- Left Column: Contact Cards & Operating Details -->
+        <div class="contact-info-col">
+          <div class="section-badge badge-blue"><i class="fa-solid fa-address-book"></i> DIRECT CONSULTATION HUB</div>
+          <h2 style="font-family: var(--font-heading); font-size: 2rem; font-weight: 900; color: var(--color-slate-950); margin: 0.5rem 0 1rem 0;">
+            Speak Directly With Our Master Tradespeople
+          </h2>
+          <p class="contact-lead">
+            We do not use offshore call centers. When you contact WSK, you speak directly with our senior project managers, certified master electricians, and licensed structural builders.
+          </p>
+
+          <div class="contact-cards-list">
+            <!-- Phone Card -->
+            <div class="contact-info-card">
+              <div class="cic-icon icon-lime"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <span class="cic-label">Direct Phone Line</span>
+                <a href="tel:+27731550289" class="cic-value">073 155 0289</a>
+                <span class="cic-sub">Mon–Fri: 7:00 AM – 6:30 PM | Sat: 8:00 AM – 4:00 PM</span>
+              </div>
+            </div>
+
+            <!-- Email Card -->
+            <div class="contact-info-card">
+              <div class="cic-icon icon-blue"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span class="cic-label">Electronic Mail</span>
+                <a href="mailto:info@wkeandcprojects.co.za" class="cic-value-text">info@wkeandcprojects.co.za</a>
+                <span class="cic-sub">Send blueprints, plans, or photos for fast review</span>
+              </div>
+            </div>
+
+            <!-- WhatsApp Card -->
+            <div class="contact-info-card">
+              <div class="cic-icon icon-lime"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <span class="cic-label">WhatsApp Direct</span>
+                <a href="https://wa.me/27731550289?text=Hi%20WSK%20Electrical%20%26%20Renovation%20Projects,%20I%20would%20like%20to%20inquire%20about%20a%20project." target="_blank" rel="noopener noreferrer" class="cic-value">073 155 0289</a>
+                <span class="cic-sub">Instant messaging &amp; quick project inquiries</span>
+              </div>
+            </div>
+
+            <!-- Office Address Card -->
+            <div class="contact-info-card">
+              <div class="cic-icon icon-cream"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <span class="cic-label">Design Studio &amp; Workshop</span>
+                <span class="cic-value-text">46 Brookford Road, Lotus River, Cape Town, 7941</span>
+                <span class="cic-sub">Open for in-person material &amp; architectural consultations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Contact Form -->
+        <div class="form-container-card">
+          <div class="form-header">
+            <div class="badge-pill" style="color: var(--color-lime-400); margin-bottom: 0.4rem; display: inline-flex;"><i class="fa-solid fa-envelope"></i> CONTACT US FORM</div>
+            <h2 class="form-title">Contact Us Form</h2>
+            <p class="form-sub">Fill out the specifications below. Our team will review and respond promptly.</p>
+          </div>
+
+          <form id="main-contact-form" class="consultation-form" onsubmit="handleFormSubmit(event)">
+            <!-- Name & Phone Row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Full Name <span class="required text-lime">*</span></label>
+                <input type="text" id="contact-name" required placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="contact-phone">Phone Number <span class="required text-lime">*</span></label>
+                <input type="tel" id="contact-phone" required placeholder="(555) 123-4567">
+              </div>
+            </div>
+
+            <!-- Email & Property Address Row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-email">Email Address <span class="required text-lime">*</span></label>
+                <input type="email" id="contact-email" required placeholder="john@example.com">
+              </div>
+              <div class="form-group">
+                <label for="contact-address">Project Location / City <span class="required text-lime">*</span></label>
+                <input type="text" id="contact-address" required placeholder="e.g. Cape Town">
+              </div>
+            </div>
+
+            <!-- Service Category & Target Timeline Row -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-service">Project Category <span class="required text-lime">*</span></label>
+                <select id="contact-service" required>
+                  <option value="Certified Master Electrical" selected>Certified Master Electrical (200A/400A)</option>
+                  <option value="Luxury Kitchen Renovation">Luxury Kitchen Renovation</option>
+                  <option value="Master Bathroom Remodel">Master Bathroom Spa Remodel</option>
+                  <option value="Home Addition & Extension">Two-Story Home Addition / Extension</option>
+                  <option value="Commercial Fit-Out">Commercial Fit-Out &amp; 3-Phase</option>
+                  <option value="Solar Microgrid & Powerwall">Solar Microgrid &amp; Inverter Setup</option>
+                  <option value="General Electrical & Renovation">General Electrical &amp; Renovation</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contact-timeline">Target Start Timeline</label>
+                <select id="contact-timeline">
+                  <option value="Immediate (Within 1-2 Weeks)">Immediate (Within 1-2 Weeks)</option>
+                  <option value="1-3 Months (Planned Execution)" selected>1-3 Months (Planned Execution)</option>
+                  <option value="3-6 Months (Architectural Planning)">3-6 Months (Architectural Planning)</option>
+                  <option value="Feasibility / Early Budgeting">Feasibility / Early Budgeting</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Budget Investment Range Selector (Radio Chips) -->
+            <div class="form-group">
+              <label>Estimated Project Budget Range</label>
+              <div class="budget-chips-group">
+                <label class="budget-chip-label">
+                  <input type="radio" name="budget-tier" value="< R50,000">
+                  <div class="budget-chip-box">&lt; R50k</div>
+                </label>
+                <label class="budget-chip-label">
+                  <input type="radio" name="budget-tier" value="R50,000 - R150,000">
+                  <div class="budget-chip-box">R50k – R150k</div>
+                </label>
+                <label class="budget-chip-label">
+                  <input type="radio" name="budget-tier" value="R150,000 - R350,000" checked>
+                  <div class="budget-chip-box">R150k – R350k</div>
+                </label>
+                <label class="budget-chip-label">
+                  <input type="radio" name="budget-tier" value="R350,000 - R750,000">
+                  <div class="budget-chip-box">R350k – R750k</div>
+                </label>
+                <label class="budget-chip-label">
+                  <input type="radio" name="budget-tier" value="R750,000+">
+                  <div class="budget-chip-box">R750k+</div>
+                </label>
+                <label class="budget-chip-label">
+                  <input type="radio" name="budget-tier" value="Need Guidance">
+                  <div class="budget-chip-box">Need Guidance</div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Project Details Message -->
+            <div class="form-group">
+              <label for="contact-message">Project Scope &amp; Specifications</label>
+              <textarea id="contact-message" rows="4" placeholder="Describe your vision, square footage, specific electrical or structural requirements..."></textarea>
+            </div>
+
+            <!-- File Upload Dropzone Simulation -->
+            <div class="form-group">
+              <label>Attach Blueprints, Sketches, or Photos (Optional)</label>
+              <div class="file-dropzone-box" id="file-dropzone">
+                <input type="file" id="file-input" style="display: none;" accept="image/*,.pdf,.dwg">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <p id="dropzone-file-display">Drag &amp; drop floor plans, sketches, or photos here, or <strong>browse files</strong></p>
+                <span>Supports JPG, PNG, PDF up to 25MB</span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-lime btn-lg w-100" style="padding: 1rem;">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Submit Message</span>
+            </button>
+
+            <div class="form-security-note">
+              <i class="fa-solid fa-lock text-lime"></i> 256-Bit SSL Encrypted • 100% Privacy Protected • Zero Spam Policy
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- CTA Banner Section -->
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-banner-card">
+        <div class="section-badge badge-lime"><i class="fa-solid fa-sparkles"></i> YOUR IDEA IS OUR PROJECT</div>
+        <h2 class="cta-title">Ready to Start Building With True Master Tradespeople?</h2>
+        <p class="cta-desc">
+          Contact our team today. We provide accurate on-site evaluations, comprehensive 3D blueprints, and transparent line-item proposals.
+        </p>
+        <div class="cta-buttons">
+          <a href="tel:+27731550289" class="btn btn-lime btn-lg">
+            <i class="fa-solid fa-phone"></i>
+            <span>Call 073 155 0289</span>
+          </a>
+          <button class="btn btn-blue btn-lg" onclick="openQuoteModal()">
+            <i class="fa-solid fa-calculator"></i>
+            <span>Request Instant Quote</span>
+          </button>
+        </div>
+        <div class="cta-features-list">
+          <div class="cta-item"><i class="fa-solid fa-shield-check text-lime"></i> Licensed &amp; Insured #EC-98421</div>
+          <div class="cta-item"><i class="fa-solid fa-check text-blue"></i> 10-Year Craftsmanship Warranty</div>
+          <div class="cta-item"><i class="fa-solid fa-certificate text-lime"></i> Certified Master Workmanship</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive Modern Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <div class="footer-logo-wrap">
+            <img src="assets/images/logo.png" alt="WSK Electrical &amp; Renovation Projects" class="footer-logo-img">
+          </div>
+          <p class="footer-about-text">
+            <strong>WSK Electrical &amp; Renovation Projects</strong> is a premier licensed contractor specializing in high-end architectural renovations, ground-up additions, commercial fit-outs, and certified master electrical engineering.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Navigation</h3>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="services.html">Services Catalog</a></li>
+            <li><a href="portfolio.html">Project Portfolio</a></li>
+            <li><a href="index.html#estimator">Cost Estimator</a></li>
+            <li><a href="index.html#why-us">Why Choose WSK</a></li>
+            <li><a href="index.html#reviews">Client Testimonials</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Specialties</h3>
+          <ul class="footer-nav">
+            <li><a href="services.html#master-electrical">200A/400A Service Upgrades</a></li>
+            <li><a href="services.html#residential-remodel">Luxury Kitchen &amp; Bath Remodels</a></li>
+            <li><a href="services.html#home-additions">Two-Story Home Extensions</a></li>
+            <li><a href="services.html#commercial-fitout">Commercial Fit-Outs &amp; 3-Phase</a></li>
+            <li><a href="services.html#solar-smart">Tesla Powerwall &amp; Solar Microgrids</a></li>
+            <li><a href="services.html#solar-smart">Tesla Powerwall &amp; Solar Microgrids</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-heading">Direct Contact</h3>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone text-lime"></i>
+            <div>
+              <strong><a href="tel:+27731550289">073 155 0289</a></strong>
+              <span>Direct Phone Line</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-whatsapp text-lime"></i>
+            <div>
+              <strong><a href="https://wa.me/27731550289?text=Hi%20WSK%20Electrical%20%26%20Renovation%20Projects,%20I%20would%20like%20to%20inquire%20about%20a%20project." target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></strong>
+              <span>Instant Messaging</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope text-lime"></i>
+            <div>
+              <strong><a href="mailto:info@wkeandcprojects.co.za">info@wkeandcprojects.co.za</a></strong>
+              <span>Fast Response Email</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot text-lime"></i>
+            <div>
+              <strong>Headquarters</strong>
+              <span>46 Brookford Road, Lotus River, Cape Town, 7941</span>
+            </div>
+          </div>
+          <div class="footer-social-links">
+            <a href="https://www.facebook.com/WKElectricalConstructionProjects/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/wkelectrical/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Houzz"><i class="fa-brands fa-houzz"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> WSK Electrical &amp; Renovation Projects. All rights reserved. "Your Idea Is Our Project".</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>•</span>
+          <a href="#">Terms of Service</a>
+          <span>•</span>
+          <a href="#">Safety &amp; Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions (WhatsApp & Call Icons + Greeting Pop-up) -->
+  <div class="floating-quick-actions" aria-label="Quick Contact Actions">
+    <!-- Welcome Greeting Pop-up Bubble -->
+    <div class="whatsapp-greeting-popup" id="whatsapp-greeting-popup" role="dialog" aria-label="WhatsApp Welcome Message">
+      <div class="wpg-header">
+        <div class="wpg-profile">
+          <div class="wpg-avatar-wrap">
+            <i class="fa-solid fa-headset"></i>
+            <span class="wpg-online-dot"></span>
+          </div>
+          <div class="wpg-meta">
+            <span class="wpg-name">WSK Projects</span>
+            <span class="wpg-status"><i class="fa-solid fa-circle" style="font-size: 0.55rem; margin-right: 3px;"></i> Online now</span>
+          </div>
+        </div>
+        <button type="button" class="wpg-close-btn" id="wpg-close-btn" aria-label="Close welcome message">&times;</button>
+      </div>
+      <div class="wpg-bubble">
+        <p class="wpg-message">Welcome to WSK, how can we help you?</p>
+      </div>
+      <a href="https://wa.me/27731550289?text=Hi%20WSK%20Electrical%20%26%20Renovation%20Projects,%20I%20would%20like%20to%20schedule%20a%20consultation." class="wpg-chat-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Chat on WhatsApp</span>
+      </a>
+    </div>
+
+    <a href="https://wa.me/27731550289?text=Hi%20WSK%20Electrical%20%26%20Renovation%20Projects,%20I%20would%20like%20to%20schedule%20a%20consultation." class="float-btn float-whatsapp" id="float-whatsapp-btn" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+      <span class="float-pulse-whatsapp"></span>
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+27731550289" class="float-btn float-call" title="Call Us Direct" aria-label="Call Us">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- Interactive Project & Estimate Modal -->
+  <div class="modal-overlay" id="quote-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeQuoteModal()" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-badge text-lime"><i class="fa-solid fa-clipboard-check"></i> FREE ESTIMATE &amp; CONSULTATION</div>
+        <h3 class="modal-title" id="modal-title">Request Your WSK Proposal</h3>
+        <p class="modal-desc">"Your Idea Is Our Project" — Speak directly with our Master Builder and Master Electrician.</p>
+      </div>
+
+      <form id="modal-quote-form" onsubmit="handleModalSubmit(event)">
+        <div class="modal-form-grid">
+          <div class="form-group">
+            <label for="m-name">Full Name <span class="required text-lime">*</span></label>
+            <input type="text" id="m-name" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="m-phone">Phone Number <span class="required text-lime">*</span></label>
+            <input type="tel" id="m-phone" required placeholder="(555) 123-4567">
+          </div>
+          <div class="form-group">
+            <label for="m-email">Email Address <span class="required text-lime">*</span></label>
+            <input type="email" id="m-email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="m-service">Project Category <span class="required text-lime">*</span></label>
+            <select id="m-service" required>
+              <option value="Certified Master Electrical" selected>Certified Master Electrical</option>
+              <option value="Luxury Kitchen Renovation">Luxury Kitchen Renovation</option>
+              <option value="Bathroom Remodel">Master Bathroom Remodel</option>
+              <option value="Home Addition & Extension">Home Addition &amp; Extension</option>
+              <option value="Commercial Fit-Out">Commercial Fit-Out &amp; 3-Phase</option>
+              <option value="Solar & Battery Storage">Solar Microgrid &amp; Tesla Powerwall</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="m-notes">Project Details / Estimated Dimensions</label>
+          <textarea id="m-notes" rows="3" placeholder="Describe your timeline, square footage, specific requirements..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-lime btn-lg w-100 mt-4">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Send Estimate Request</span>
+        </button>
+
+        <p class="modal-footer-note"><i class="fa-solid fa-shield-check text-blue"></i> 100% Privacy Protected • Licensed Master Tradespeople</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

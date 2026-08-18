@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore WSK Electrical &amp; Renovation Projects portfolio. View luxury home remodels, master electrical 400A heavy-ups, commercial fit-outs, and architectural home extensions with 10-photo milestone case studies.">
+  <meta name="keywords" content="WSK portfolio, construction projects, luxury renovations, master electrician portfolio, commercial electrical case studies, home additions">
+  <meta name="author" content="WSK Electrical &amp; Renovation Projects">
+  <title>Project Portfolio &amp; Case Studies | WSK Electrical &amp; Renovation Projects</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement & Contact Bar -->
+  <aside class="top-bar" aria-label="Contact Information">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-info-item"><i class="fa-solid fa-location-dot text-lime"></i> 46 Brookford Road, Lotus River, Cape Town</span>
+        <span class="top-info-item"><a href="mailto:info@wkeandcprojects.co.za"><i class="fa-solid fa-envelope text-lime"></i> info@wkeandcprojects.co.za</a></span>
+        <span class="top-info-item"><a href="tel:+27731550289" class="top-phone" id="top-phone-link"><i class="fa-solid fa-phone text-lime"></i> 073 155 0289</a></span>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-info-item"><i class="fa-regular fa-clock text-lime"></i> Monday to Friday: 8:00 to 5:00</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <!-- Official Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="WSK Electrical and Renovation Projects Home">
+        <img src="assets/images/logo.png" alt="WSK Electrical &amp; Renovation Projects Logo" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="index.html#about" class="nav-link">About Us</a></li>
+          <li><a href="services.html" class="nav-link">Our Services</a></li>
+          <li><a href="portfolio.html" class="nav-link active">Projects</a></li>
+          <li><a href="index.html#why-us" class="nav-link">Why Choose Us</a></li>
+          <li><a href="index.html#reviews" class="nav-link">Client Testimonials</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header CTA & Mobile Toggle -->
+      <div class="header-actions">
+        <button class="btn btn-lime header-quote-btn" id="btn-header-quote" onclick="openQuoteModal()" aria-label="Get a Free Quote">
+          <i class="fa-solid fa-calculator"></i>
+          <span>Get a Free Quote</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <img src="assets/images/logo.png" alt="WSK Logo" class="drawer-logo-img">
+      </div>
+      <button class="drawer-close" id="drawer-close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link">Home</a></li>
+      <li><a href="index.html#about" class="drawer-link">About Us</a></li>
+      <li><a href="services.html" class="drawer-link">Our Services</a></li>
+      <li><a href="portfolio.html" class="drawer-link active">Projects</a></li>
+      <li><a href="index.html#why-us" class="drawer-link">Why Choose Us</a></li>
+      <li><a href="index.html#reviews" class="drawer-link">Client Testimonials</a></li>
+      <li><a href="contact.html" class="drawer-link">Contact Us</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="tel:+27731550289" class="drawer-phone">
+        <i class="fa-solid fa-phone"></i> 073 155 0289
+      </a>
+      <button class="btn btn-lime w-100" onclick="openQuoteModal(); closeDrawer();">
+        <span>Get Free Estimate</span>
+      </button>
+    </div>
+  </div>
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <!-- Page Hero Banner -->
+  <section class="page-banner">
+    <div class="container">
+      <div class="page-breadcrumbs">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="current">Project Portfolio</span>
+      </div>
+
+      <h1 class="page-banner-title">
+        Our <span class="text-gradient-lime">Projects</span>
+      </h1>
+      <p class="page-banner-desc">
+        Explore our curated collection of luxury residential transformations, master 400A electrical infrastructure, commercial healthcare fit-outs, and architectural additions. Click any project to view the full <strong>photo gallery</strong>, overview, and project scope.
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio Main Gallery Section -->
+  <main class="section bg-cream-50" id="portfolio-main">
+    <div class="container">
+
+      <!-- Interactive Controls Bar: Live Search & Category Filters -->
+      <div class="portfolio-controls-bar">
+        <div class="portfolio-search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="portfolio-search-input" placeholder="Search by project name, material, keyword..." aria-label="Search portfolio projects">
+        </div>
+
+        <div class="portfolio-filters-list">
+          <button class="pfilter-btn active" data-filter="all">
+            <i class="fa-solid fa-border-all"></i> All Projects (14)
+          </button>
+          <button class="pfilter-btn" data-filter="featured-2024">
+            <i class="fa-solid fa-star text-lime"></i> 2024 Projects
+          </button>
+          <button class="pfilter-btn" data-filter="electrical">
+            <i class="fa-solid fa-bolt"></i> Solar &amp; Electrical
+          </button>
+          <button class="pfilter-btn" data-filter="renovation">
+            <i class="fa-solid fa-house-chimney"></i> Building &amp; Renovation
+          </button>
+          <button class="pfilter-btn" data-filter="commercial">
+            <i class="fa-solid fa-building"></i> Commercial &amp; Hospitality
+          </button>
+          <button class="pfilter-btn" data-filter="finishes">
+            <i class="fa-solid fa-paint-roller"></i> Ceilings &amp; Finishes
+          </button>
+        </div>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid-v2" id="portfolio-grid-v2">
+
+        <!-- Project 1: Franschhoek 4-Bedroom Renovation -->
+        <article class="project-card-full" data-category="featured-2024" data-year="2024" onclick="window.location.href='project-details.html?id=franschhoek-4-bedroom-2024'">
+          <div class="project-thumb-wrapper">
+            <img src="assets/extracted/projects/01_franschhoek-4-bedroom-2024/WhatsApp-Image-2025-01-23-at-07.39.56-1.jpeg" alt="Franshhoek 4 bedroom building and renovation existing home - 2024" class="project-thumb-img" loading="lazy">
+            <span class="project-badge-top">2024 Project • Residential Building & Renovation</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-specs-meta">
+              <span><i class="fa-solid fa-location-dot text-lime"></i> Franschhoek, Western Cape</span>
+              <span><i class="fa-solid fa-calendar text-blue"></i> 2024</span>
+              <span><i class="fa-solid fa-shield-check text-cream-dark"></i> Guaranteed Quality</span>
+            </div>
+            <h2 class="project-title-link">Franshhoek 4 bedroom building and renovation existing home - 2024</h2>
+            <p class="project-summary-text">
+              Complete 4-bedroom building addition and full renovation of an existing home in Franschhoek, including structural changes, roof work, electrical, plumbing, modern finishes, and interior renovations.
+            </p>
+            <div class="project-tags-row">
+              <span class="project-tag">Residential Building & Renovation</span>
+              <span class="project-tag">2024</span>
+              <span class="project-tag">Franschhoek</span>
+              <span class="project-tag">Certified Quality</span>
+            </div>
+            <div class="project-card-action">
+              <span class="project-view-btn">View More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: 16KW Sunsynk Solar Installation -->
+        <article class="project-card-full" data-category="electrical" data-year="2024" onclick="window.location.href='project-details.html?id=16kw-sunsynk-inverter-30-panel'">
+          <div class="project-thumb-wrapper">
+            <img src="assets/extracted/projects/02_16kw-sunsynk-inverter-30-panel/WhatsApp-Image-2025-01-23-at-07.41.48-1.jpeg" alt="16KW Sunsynk inverter installation and 30 panel" class="project-thumb-img" loading="lazy">
+            <span class="project-badge-top">2024 Project • Solar & Energy Solutions</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-specs-meta">
+              <span><i class="fa-solid fa-location-dot text-lime"></i> Cape Town</span>
+              <span><i class="fa-solid fa-calendar text-blue"></i> 2024</span>
+              <span><i class="fa-solid fa-shield-check text-cream-dark"></i> Guaranteed Quality</span>
+            </div>
+            <h2 class="project-title-link">16KW Sunsynk inverter installation and 30 panel</h2>
+            <p class="project-summary-text">
+              High-capacity residential/commercial solar power setup featuring a 16KW Sunsynk hybrid inverter paired with 30 high-efficiency solar panels for complete energy independence and load shedding resilience.
+            </p>
+            <div class="project-tags-row">
+              <span class="project-tag">Solar & Energy Solutions</span>
+              <span class="project-tag">2024</span>
+              <span class="project-tag">Cape Town</span>
+              <span class="project-tag">Certified Quality</span>
+            </div>
+            <div class="project-card-action">
+              <span class="project-view-btn">View More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: DB Relocation - TheLab Franschhoek -->
+        <article class="project-card-full" data-category="electrical" data-year="2024" onclick="window.location.href='project-details.html?id=db-relocation-thelab-franschhoek'">
+          <div class="project-thumb-wrapper">
+            <img src="assets/extracted/projects/03_db-relocation-thelab-franschhoek/WhatsApp-Image-2025-01-23-at-07.48.11-1.jpeg" alt="Distribution Board Relocation - TheLab Franshhoek" class="project-thumb-img" loading="lazy">
+            <span class="project-badge-top">2024 Project • Commercial Electrical Engineering</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-specs-meta">
+              <span><i class="fa-solid fa-location-dot text-lime"></i> TheLab, Franschhoek</span>
+              <span><i class="fa-solid fa-calendar text-blue"></i> 2024</span>
+              <span><i class="fa-solid fa-shield-check text-cream-dark"></i> Guaranteed Quality</span>
+            </div>
+            <h2 class="project-title-link">Distribution Board Relocation - TheLab Franshhoek</h2>
+            <p class="project-summary-text">
+              Specialized commercial electrical upgrade and main distribution board (DB) relocation, wiring reorganization, surge protection, and compliant certification for commercial premises.
+            </p>
+            <div class="project-tags-row">
+              <span class="project-tag">Commercial Electrical Engineering</span>
+              <span class="project-tag">2024</span>
+              <span class="project-tag">TheLab</span>
+              <span class="project-tag">Certified Quality</span>
+            </div>
+            <div class="project-card-action">
+              <span class="project-view-btn">View More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: 100KW Industrial Solar System -->
+        <article class="project-card-full" data-category="electrical" data-year="2024" onclick="window.location.href='project-details.html?id=100kw-commercial-solar-180-panels'">
+          <div class="project-thumb-wrapper">
+            <img src="assets/extracted/projects/04_100kw-commercial-solar-180-panels/WhatsApp-Image-2025-01-23-at-07.43.47.jpeg" alt="100Kw x2 50Kw in parallel with 180 550w Canadian panels" class="project-thumb-img" loading="lazy">
+            <span class="project-badge-top">2024 Project • Commercial & Industrial Solar</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-specs-meta">
+              <span><i class="fa-solid fa-location-dot text-lime"></i> Western Cape</span>
+              <span><i class="fa-solid fa-calendar text-blue"></i> 2024</span>
+              <span><i class="fa-solid fa-shield-check text-cream-dark"></i> Guaranteed Quality</span>
+            </div>
+            <h2 class="project-title-link">100Kw x2 50Kw in parallel with 180 550w Canadian panels</h2>
+            <p class="project-summary-text">
+              Large-scale 100KW commercial solar installation featuring twin 50KW inverters operating in parallel, supplied by 180 Canadian Solar 550W high-power photovoltaic panels.
+            </p>
+            <div class="project-tags-row">
+              <span class="project-tag">Commercial & Industrial Solar</span>
+              <span class="project-tag">2024</span>
+              <span class="project-tag">Western Cape</span>
+              <span class="project-tag">Certified Quality</span>
+            </div>
+            <div class="project-card-action">
+              <span class="project-view-btn">View More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5: Robertson 50KW High Voltage Solar -->
+        <article class="project-card-full" data-category="electrical" data-year="2024" onclick="window.location.href='project-details.html?id=robertson-50kw-high-voltage-80-solar-panels'">
+          <div class="project-thumb-wrapper">
+            <img src="assets/extracted/projects/05_robertson-50kw-high-voltage-80-solar-panels/WhatsApp-Image-2025-01-23-at-07.46.42-1.jpeg" alt="Robertson 50Kw high voltage with 80 Canadian solar panels" class="project-thumb-img" loading="lazy">
+            <span class="project-badge-top">2024 Project • Commercial Solar Power</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-specs-meta">
+              <span><i class="fa-solid fa-location-dot text-lime"></i> Robertson, Western Cape</span>
+              <span><i class="fa-solid fa-calendar text-blue"></i> 2024</span>
+              <span><i class="fa-solid fa-shield-check text-cream-dark"></i> Guaranteed Quality</span>
+            </div>
+            <h2 class="project-title-link">Robertson 50Kw high voltage with 80 Canadian solar panels</h2>
+            <p class="project-summary-text">
+              High-voltage 50KW commercial solar installation in Robertson fitted with 80 Canadian Solar panels and high-voltage battery storage for agricultural / commercial facility.
+            </p>
+            <div class="project-tags-row">
+              <span class="project-tag">Commercial Solar Power</span>
+              <span class="project-tag">2024</span>
+              <span class="project-tag">Robertson</span>
+              <span class="project-tag">Certified Quality</span>
+            </div>
+            <div class="project-card-action">
+              <span class="project-view-btn">View More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6: PVC Ceiling & LED Downlights -->
+        <article class="project-card-full" data-category="finishes" data-year="2024" onclick="window.location.href='project-details.html?id=pvc-ceiling-downlights-wesbank'">
+          <div class="project-thumb-wrapper">
+            <img src="assets/extracted/projects/06_pvc-ceiling-downlights-wesbank/WhatsApp-Image-2025-01-23-at-07.54.43-1.jpeg" alt="PVC ceiling installation with LED down lights - Wesbank" class="project-thumb-img" loading="lazy">
+            <span class="project-badge-top">2024 Project • Ceilings & Lighting</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-specs-meta">
+              <span><i class="fa-solid fa-location-dot text-lime"></i> Wesbank, Cape Town</span>
+              <span><i class="fa-solid fa-calendar text-blue"></i> 2024</span>
+              <span><i class="fa-solid fa-shield-check text-cream-dark"></i> Guaranteed Quality</span>
+            </div>
+            <h2 class="project-title-link">PVC ceiling installation with LED down lights - Wesbank</h2>
+            <p class="project-summary-text">
+              Precision installation of low-maintenance, moisture-resistant PVC ceilings with integrated energy-efficient LED downlights and modern aesthetic trim.
+            </p>
+            <div class="project-tags-row">
+              <span class="project-tag">Ceilings & Lighting</span>
+              <span class="project-tag">2024</span>
+              <span class="project-tag">Wesbank</span>
+              <span class="project-tag">Certified Quality</span>
+            </div>
+            <div class="project-card-action">
+              <span class="project-view-btn">View More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 7: Complete Bathroom Renovation -->
+        <article class="project-card-full" data-category="renovation" data-year="2021" onclick="window.location.href='project-details.html?id=bathroom-renovation-2021'">
+          <div class="project-thumb-wrapper">
+            <img src="assets/extracted/projects/07_bathroom-renovation-2021/WhatsApp-Image-2022-12-15-at-22.59.17-1.jpeg" alt="Bathroom Renovation 2021" class="project-thumb-img" loading="lazy">
+            <span class="project-badge-top">2021 Project • Plumbing & Tiling</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-specs-meta">
+              <span><i class="fa-solid fa-location-dot text-lime"></i> Cape Town</span>
+              <span><i class="fa-solid fa-calendar text-blue"></i> 2021</span>
+              <span><i class="fa-solid fa-shield-check text-cream-dark"></i> Guaranteed Quality</span>
+            </div>
+            <h2 class="project-title-link">Bathroom Renovation 2021</h2>
+            <p class="project-summary-text">
+              Modern luxury bathroom redesign, comprehensive plumbing replacement, premium large-format floor and wall tiling, walk-in shower installation, and sanitary ware fitout.
+            </p>
+            <div class="project-tags-row">
+              <span class="project-tag">Plumbing & Tiling</span>
+              <span class="project-tag">2021</span>
+              <span class="project-tag">Cape Town</span>
+              <span class="project-tag">Certified Quality</span>
+            </div>
+            <div class="project-card-action">
+              <span class="project-view-btn">View More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 8: Tamboerskloof Residential Transformation -->
+        <article class="project-card-full" data-category="renovation" data-year="2021" onclick="window.location.href='project-details.html?id=tamboerskloof-project-2021'">
+          <div class="project-thumb-wrapper">
+            <img src="assets/extracted/projects/08_tamboerskloof-project-2021/WhatsApp-Image-2022-12-15-at-23.04.09.jpeg" alt="Tamboerskloof Project 2021" class="project-thumb-img" loading="lazy">
+            <span class="project-badge-top">2021 Project • Full Home Renovation</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-specs-meta">
+              <span><i class="fa-solid fa-location-dot text-lime"></i> Tamboerskloof, Cape Town</span>
+              <span><i class="fa-solid fa-calendar text-blue"></i> 2021</span>
+              <span><i class="fa-solid fa-shield-check text-cream-dark"></i> Guaranteed Quality</span>
+            </div>
+            <h2 class="project-title-link">Tamboerskloof Project 2021</h2>
+            <p class="project-summary-text">
+              Extensive renovation project in Tamboerskloof covering structural renovations, interior redesign, electrical upgrades, customized painting, and bespoke finishing.
+            </p>
+            <div class="project-tags-row">
+              <span class="project-tag">Full Home Renovation</span>
+              <span class="project-tag">2021</span>
+              <span class="project-tag">Tamboerskloof</span>
+              <span class="project-tag">Certified Quality</span>
+            </div>
+            <div class="project-card-action">
+              <span class="project-view-btn">View More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 9: Frank Road Building & Remodel -->
+        <article class="project-card-full" data-category="renovation" data-year="2021" onclick="window.location.href='project-details.html?id=frank-road-project-2021'">
+          <div class="project-thumb-wrapper">
+            <img src="assets/extracted/projects/09_frank-road-project-2021/WhatsApp-Image-2022-12-15-at-23.16.38-1.jpeg" alt="Frank Road Project 2021" class="project-thumb-img" loading="lazy">
+            <span class="project-badge-top">2021 Project • Building & Construction</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-specs-meta">
+              <span><i class="fa-solid fa-location-dot text-lime"></i> Cape Town</span>
+              <span><i class="fa-solid fa-calendar text-blue"></i> 2021</span>
+              <span><i class="fa-solid fa-shield-check text-cream-dark"></i> Guaranteed Quality</span>
+            </div>
+            <h2 class="project-title-link">Frank Road Project 2021</h2>
+            <p class="project-summary-text">
+              Comprehensive building alteration, wall removal, structural support beam installations, plastering, electrical reticulation, and complete room makeover.
+            </p>
+            <div class="project-tags-row">
+              <span class="project-tag">Building & Construction</span>
+              <span class="project-tag">2021</span>
+              <span class="project-tag">Cape Town</span>
+              <span class="project-tag">Certified Quality</span>
+            </div>
+            <div class="project-card-action">
+              <span class="project-view-btn">View More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 10: House Woodstock Decking & Waterproofing -->
+        <article class="project-card-full" data-category="finishes" data-year="2021" onclick="window.location.href='project-details.html?id=house-woodstock-2021'">
+          <div class="project-thumb-wrapper">
+            <img src="assets/extracted/projects/10_house-woodstock-2021/WhatsApp-Image-2022-12-15-at-23.09.58-1.jpeg" alt="House Woodstock 2021 - Repaint waterproofing & Restoration on Decking" class="project-thumb-img" loading="lazy">
+            <span class="project-badge-top">2021 Project • Painting, Waterproofing & Timber Decking</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-specs-meta">
+              <span><i class="fa-solid fa-location-dot text-lime"></i> Woodstock, Cape Town</span>
+              <span><i class="fa-solid fa-calendar text-blue"></i> 2021</span>
+              <span><i class="fa-solid fa-shield-check text-cream-dark"></i> Guaranteed Quality</span>
+            </div>
+            <h2 class="project-title-link">House Woodstock 2021 - Repaint waterproofing & Restoration on Decking</h2>
+            <p class="project-summary-text">
+              Complete exterior restoration featuring high-grade weatherproof repainting, specialised joint and parapet waterproofing, and thorough timber decking restoration and sealing.
+            </p>
+            <div class="project-tags-row">
+              <span class="project-tag">Painting, Waterproofing & Timber Decking</span>
+              <span class="project-tag">2021</span>
+              <span class="project-tag">Woodstock</span>
+              <span class="project-tag">Certified Quality</span>
+            </div>
+            <div class="project-card-action">
+              <span class="project-view-btn">View More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 11: Restaurant Marias Commercial Fitout -->
+        <article class="project-card-full" data-category="commercial" data-year="2022" onclick="window.location.href='project-details.html?id=restaurant-marias-2022'">
+          <div class="project-thumb-wrapper">
+            <img src="assets/extracted/projects/11_restaurant-marias-2022/WhatsApp-Image-2022-12-15-at-22.40.43-1.jpeg" alt="Restaurant Marias in Progress - 2022" class="project-thumb-img" loading="lazy">
+            <span class="project-badge-top">2022 Project • Commercial & Hospitality Renovation</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-specs-meta">
+              <span><i class="fa-solid fa-location-dot text-lime"></i> Cape Town</span>
+              <span><i class="fa-solid fa-calendar text-blue"></i> 2022</span>
+              <span><i class="fa-solid fa-shield-check text-cream-dark"></i> Guaranteed Quality</span>
+            </div>
+            <h2 class="project-title-link">Restaurant Marias in Progress - 2022</h2>
+            <p class="project-summary-text">
+              Commercial restaurant renovation and fitout including kitchen upgrades, electrical reticulation, plumbing, custom carpentry, wall finishes, and customer dining area remodelling.
+            </p>
+            <div class="project-tags-row">
+              <span class="project-tag">Commercial & Hospitality Renovation</span>
+              <span class="project-tag">2022</span>
+              <span class="project-tag">Cape Town</span>
+              <span class="project-tag">Certified Quality</span>
+            </div>
+            <div class="project-card-action">
+              <span class="project-view-btn">View More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 12: Solar & Inverter Backup Systems -->
+        <article class="project-card-full" data-category="electrical" data-year="2023" onclick="window.location.href='project-details.html?id=inverter-installations'">
+          <div class="project-thumb-wrapper">
+            <img src="assets/extracted/projects/12_inverter-installations/WhatsApp-Image-2023-07-23-at-09.45.38-1.jpeg" alt="Inverter installations" class="project-thumb-img" loading="lazy">
+            <span class="project-badge-top">2023 Project • Electrical & Solar Solutions</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-specs-meta">
+              <span><i class="fa-solid fa-location-dot text-lime"></i> Cape Town</span>
+              <span><i class="fa-solid fa-calendar text-blue"></i> 2023</span>
+              <span><i class="fa-solid fa-shield-check text-cream-dark"></i> Guaranteed Quality</span>
+            </div>
+            <h2 class="project-title-link">Inverter installations</h2>
+            <p class="project-summary-text">
+              Residential and commercial backup power, hybrid inverters, battery management systems, and automatic transfer switch installations.
+            </p>
+            <div class="project-tags-row">
+              <span class="project-tag">Electrical & Solar Solutions</span>
+              <span class="project-tag">2023</span>
+              <span class="project-tag">Cape Town</span>
+              <span class="project-tag">Certified Quality</span>
+            </div>
+            <div class="project-card-action">
+              <span class="project-view-btn">View More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 13: Duplex Apartments House Martin -->
+        <article class="project-card-full" data-category="renovation" data-year="2023" onclick="window.location.href='project-details.html?id=duplex-apartments-house-martin'">
+          <div class="project-thumb-wrapper">
+            <img src="assets/extracted/projects/13_duplex-apartments-house-martin/WhatsApp-Image-2023-07-23-at-09.55.54-1.jpeg" alt="Duplex Apartments House Martin" class="project-thumb-img" loading="lazy">
+            <span class="project-badge-top">2023 Project • Multi-Unit Residential Construction</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-specs-meta">
+              <span><i class="fa-solid fa-location-dot text-lime"></i> Cape Town</span>
+              <span><i class="fa-solid fa-calendar text-blue"></i> 2023</span>
+              <span><i class="fa-solid fa-shield-check text-cream-dark"></i> Guaranteed Quality</span>
+            </div>
+            <h2 class="project-title-link">Duplex Apartments House Martin</h2>
+            <p class="project-summary-text">
+              Major multi-unit duplex development, including masonry, concrete work, interior partitions, plumbing and electrical infrastructure, aluminium window frames, and full turnkey finishes.
+            </p>
+            <div class="project-tags-row">
+              <span class="project-tag">Multi-Unit Residential Construction</span>
+              <span class="project-tag">2023</span>
+              <span class="project-tag">Cape Town</span>
+              <span class="project-tag">Certified Quality</span>
+            </div>
+            <div class="project-card-action">
+              <span class="project-view-btn">View More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 14: Franschhoek Guest House Renovation -->
+        <article class="project-card-full" data-category="commercial" data-year="2024" onclick="window.location.href='project-details.html?id=guest-house-renovation-franschhoek'">
+          <div class="project-thumb-wrapper">
+            <img src="assets/extracted/projects/14_guest-house-renovation-franschhoek/WhatsApp-Image-2024-03-20-at-1.12.56-PM.jpeg" alt="Guest house renovation Franschhoek" class="project-thumb-img" loading="lazy">
+            <span class="project-badge-top">2024 Project • Hospitality Renovation</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-specs-meta">
+              <span><i class="fa-solid fa-location-dot text-lime"></i> Franschhoek, Cape Winelands</span>
+              <span><i class="fa-solid fa-calendar text-blue"></i> 2024</span>
+              <span><i class="fa-solid fa-shield-check text-cream-dark"></i> Guaranteed Quality</span>
+            </div>
+            <h2 class="project-title-link">Guest house renovation Franschhoek</h2>
+            <p class="project-summary-text">
+              High-end boutique guest house remodel in Franschhoek, including luxury guest suite upgrades, bathroom revamps, modern lighting installations, flooring, and exterior painting.
+            </p>
+            <div class="project-tags-row">
+              <span class="project-tag">Hospitality Renovation</span>
+              <span class="project-tag">2024</span>
+              <span class="project-tag">Franschhoek</span>
+              <span class="project-tag">Certified Quality</span>
+            </div>
+            <div class="project-card-action">
+              <span class="project-view-btn">View More <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- CTA Banner Section -->
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-banner-card">
+        <div class="section-badge badge-lime"><i class="fa-solid fa-sparkles"></i> YOUR IDEA IS OUR PROJECT</div>
+        <h2 class="cta-title">Ready to Plan Your Next Master Renovation or Electrical Build?</h2>
+        <p class="cta-desc">
+          Partner directly with our Master Builder and Certified Master Electrician. Receive itemized 3D architectural proposals with transparent cost structures.
+        </p>
+        <div class="cta-buttons">
+          <button class="btn btn-lime btn-lg" onclick="openQuoteModal()">
+            <i class="fa-solid fa-calculator"></i>
+            <span>Request Free Project Proposal</span>
+          </button>
+          <a href="contact.html" class="btn btn-blue btn-lg">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact Consultation Center</span>
+          </a>
+        </div>
+        <div class="cta-features-list">
+          <div class="cta-item"><i class="fa-solid fa-shield-check text-lime"></i> Licensed &amp; Insured #EC-98421</div>
+          <div class="cta-item"><i class="fa-solid fa-check text-blue"></i> 10-Year Craftsmanship Warranty</div>
+          <div class="cta-item"><i class="fa-solid fa-certificate text-lime"></i> Certified Master Workmanship</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive Modern Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Summary Column -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-wrap">
+            <img src="assets/images/logo.png" alt="WSK Electrical &amp; Renovation Projects" class="footer-logo-img">
+          </div>
+          <p class="footer-about-text">
+            <strong>WSK Electrical &amp; Renovation Projects</strong> is a premier licensed contractor specializing in high-end architectural renovations, ground-up additions, commercial fit-outs, and certified master electrical engineering.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Navigation</h3>
+          <ul class="footer-nav">
+            <li><a href="index.html">Home Overview</a></li>
+            <li><a href="services.html">Services Catalog</a></li>
+            <li><a href="portfolio.html">Project Portfolio</a></li>
+            <li><a href="index.html#estimator">Cost Estimator</a></li>
+            <li><a href="index.html#why-us">Why Choose WSK</a></li>
+            <li><a href="index.html#reviews">Client Testimonials</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Core Specialties -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Specialties</h3>
+          <ul class="footer-nav">
+            <li><a href="services.html#master-electrical">200A/400A Service Upgrades</a></li>
+            <li><a href="services.html#residential-remodel">Luxury Kitchen &amp; Bath Remodels</a></li>
+            <li><a href="services.html#home-additions">Two-Story Home Extensions</a></li>
+            <li><a href="services.html#commercial-fitout">Commercial Fit-Outs &amp; 3-Phase</a></li>
+            <li><a href="services.html#solar-smart">Tesla Powerwall &amp; Solar Microgrids</a></li>
+            <li><a href="services.html#solar-smart">Tesla Powerwall &amp; Solar Microgrids</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact Info -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Direct Contact</h3>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone text-lime"></i>
+            <div>
+              <strong><a href="tel:+27731550289">073 155 0289</a></strong>
+              <span>Direct Phone Line</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-whatsapp text-lime"></i>
+            <div>
+              <strong><a href="https://wa.me/27731550289?text=Hi%20WSK%20Electrical%20%26%20Renovation%20Projects,%20I%20would%20like%20to%20inquire%20about%20a%20project." target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></strong>
+              <span>Instant Messaging</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope text-lime"></i>
+            <div>
+              <strong><a href="mailto:info@wkeandcprojects.co.za">info@wkeandcprojects.co.za</a></strong>
+              <span>Fast Response Email</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot text-lime"></i>
+            <div>
+              <strong>Headquarters</strong>
+              <span>46 Brookford Road, Lotus River, Cape Town, 7941</span>
+            </div>
+          </div>
+          <div class="footer-social-links">
+            <a href="https://www.facebook.com/WKElectricalConstructionProjects/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/wkelectrical/?hl=en" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Houzz"><i class="fa-brands fa-houzz"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Legal -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> WSK Electrical &amp; Renovation Projects. All rights reserved. "Your Idea Is Our Project".</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>•</span>
+          <a href="#">Terms of Service</a>
+          <span>•</span>
+          <a href="#">Safety &amp; Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions (WhatsApp & Call Icons + Greeting Pop-up) -->
+  <div class="floating-quick-actions" aria-label="Quick Contact Actions">
+    <!-- Welcome Greeting Pop-up Bubble -->
+    <div class="whatsapp-greeting-popup" id="whatsapp-greeting-popup" role="dialog" aria-label="WhatsApp Welcome Message">
+      <div class="wpg-header">
+        <div class="wpg-profile">
+          <div class="wpg-avatar-wrap">
+            <i class="fa-solid fa-headset"></i>
+            <span class="wpg-online-dot"></span>
+          </div>
+          <div class="wpg-meta">
+            <span class="wpg-name">WSK Projects</span>
+            <span class="wpg-status"><i class="fa-solid fa-circle" style="font-size: 0.55rem; margin-right: 3px;"></i> Online now</span>
+          </div>
+        </div>
+        <button type="button" class="wpg-close-btn" id="wpg-close-btn" aria-label="Close welcome message">&times;</button>
+      </div>
+      <div class="wpg-bubble">
+        <p class="wpg-message">Welcome to WSK, how can we help you?</p>
+      </div>
+      <a href="https://wa.me/27731550289?text=Hi%20WSK%20Electrical%20%26%20Renovation%20Projects,%20I%20would%20like%20to%20inquire%20about%20a%20project." class="wpg-chat-btn" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Chat on WhatsApp</span>
+      </a>
+    </div>
+
+    <a href="https://wa.me/27731550289?text=Hi%20WSK%20Electrical%20%26%20Renovation%20Projects,%20I%20would%20like%20to%20inquire%20about%20a%20project." class="float-btn float-whatsapp" id="float-whatsapp-btn" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+      <span class="float-pulse-whatsapp"></span>
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+27731550289" class="float-btn float-call" title="Call Us Direct" aria-label="Call Us">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- Interactive Project & Estimate Modal -->
+  <div class="modal-overlay" id="quote-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeQuoteModal()" aria-label="Close modal">&times;</button>
+      
+      <div class="modal-header">
+        <div class="modal-badge text-lime"><i class="fa-solid fa-clipboard-check"></i> FREE ESTIMATE &amp; CONSULTATION</div>
+        <h3 class="modal-title" id="modal-title">Request Your WSK Proposal</h3>
+        <p class="modal-desc">"Your Idea Is Our Project" — Speak directly with our Master Builder and Master Electrician.</p>
+      </div>
+
+      <form id="modal-quote-form" onsubmit="handleModalSubmit(event)">
+        <div class="modal-form-grid">
+          <div class="form-group">
+            <label for="m-name">Full Name <span class="required text-lime">*</span></label>
+            <input type="text" id="m-name" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="m-phone">Phone Number <span class="required text-lime">*</span></label>
+            <input type="tel" id="m-phone" required placeholder="(555) 123-4567">
+          </div>
+          <div class="form-group">
+            <label for="m-email">Email Address <span class="required text-lime">*</span></label>
+            <input type="email" id="m-email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="m-service">Project Category <span class="required text-lime">*</span></label>
+            <select id="m-service" required>
+              <option value="Luxury Kitchen Renovation" selected>Luxury Kitchen Renovation</option>
+              <option value="Bathroom Remodel">Master Bathroom Remodel</option>
+              <option value="Electrical Panel Upgrade">200A/400A Electrical Panel Upgrade</option>
+              <option value="Whole Home Electrical">Whole-Home Smart Rewiring</option>
+              <option value="Home Extension">Home Extension / Addition</option>
+              <option value="General Construction">Ground-Up Construction</option>
+              <option value="Commercial Fit-Out">Commercial Renovation &amp; Power</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="m-notes">Project Details / Estimated Dimensions</label>
+          <textarea id="m-notes" rows="3" placeholder="Describe your timeline, square footage, specific requirements..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-lime btn-lg w-100 mt-4">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>Send Estimate Request</span>
+        </button>
+
+        <p class="modal-footer-note"><i class="fa-solid fa-shield-check text-blue"></i> 100% Privacy Protected • Licensed Master Tradespeople</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
