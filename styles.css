@@ -2013,6 +2013,153 @@ button {
   flex-wrap: wrap;
 }
 
+.ba-stat-item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-cream-50);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-cream-200);
+}
+
+.ba-stat-item .stat-label {
+  font-size: 0.72rem;
+  color: var(--color-slate-500);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.ba-stat-item .stat-val {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--color-slate-950);
+}
+
+/* Comparison Slider Container */
+.comparison-slider {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  box-shadow: var(--shadow-lg);
+  cursor: ew-resize;
+  background-color: var(--color-slate-900);
+  touch-action: pan-y;
+}
+
+.img-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+.before-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.img-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: none;
+  display: block;
+  pointer-events: none;
+}
+
+/* Floating labels */
+.badge-label {
+  position: absolute;
+  top: 18px;
+  padding: 0.4rem 0.85rem;
+  border-radius: 9999px;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  z-index: 5;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+.badge-after {
+  right: 18px;
+  background-color: rgba(141, 198, 63, 0.92);
+  color: var(--color-slate-950);
+}
+
+.badge-before {
+  left: 18px;
+  background-color: rgba(239, 68, 68, 0.9);
+  color: var(--color-white);
+}
+
+/* Slider Handle */
+.slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 40px;
+  margin-left: -20px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+.handle-line {
+  flex-grow: 1;
+  width: 3px;
+  background-color: var(--color-white);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.handle-button {
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-lime-500);
+  color: var(--color-slate-950);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  box-shadow: 0 0 16px rgba(0,0,0,0.6);
+  border: 3px solid var(--color-white);
+  pointer-events: auto;
+}
+
+.ba-drag-hint {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-slate-600);
+  margin-top: 0.85rem;
+  font-weight: 600;
+}
+
 @media (max-width: 768px) {
   .before-after-card {
     padding: 1.25rem 1rem;
@@ -2076,7 +2223,7 @@ button {
   }
 
   .comparison-slider {
-    height: 280px;
+    height: 300px;
   }
 
   .badge-label {
@@ -2098,52 +2245,6 @@ button {
     font-size: 0.78rem;
     text-align: center;
   }
-}
-
-/* Slider Handle */
-.slider-handle {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 40px;
-  margin-left: -20px;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  pointer-events: none;
-}
-
-.handle-line {
-  flex-grow: 1;
-  width: 3px;
-  background-color: var(--color-white);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-}
-
-.handle-button {
-  width: 44px;
-  height: 44px;
-  background-color: var(--color-lime-500);
-  color: var(--color-slate-950);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  font-size: 0.85rem;
-  box-shadow: 0 0 16px rgba(0,0,0,0.6);
-  border: 3px solid var(--color-white);
-  pointer-events: auto;
-}
-
-.ba-drag-hint {
-  text-align: center;
-  font-size: 0.85rem;
-  color: var(--color-slate-600);
-  margin-top: 0.85rem;
-  font-weight: 600;
 }
 
 /* Project Filter Tabs */
